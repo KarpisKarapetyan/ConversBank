@@ -1,0 +1,41 @@
+.mainCalc{
+    /* width: 40vw;
+    height: 35vh;
+    border: 1px black solid;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888; */
+
+    /* position: absolute; */
+    width: 793px;
+    height: 409px;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.titleCalc{
+    /* position: absolute; */
+    width: 116px;
+    height: 40px;
+    padding: 40px 0 20px 33px;
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 39px;
+    color: #333333;
+}
+
+.MuiTypography-root {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.calc_value {
+    margin-top: -60px
+}

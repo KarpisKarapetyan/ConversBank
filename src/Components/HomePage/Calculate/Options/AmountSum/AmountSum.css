@@ -1,0 +1,21 @@
+.changeSum{
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px rgb(184, 173, 173) solid;
+    padding: 10px;
+    border-radius: 10px;
+}
+.changeSum span {
+    font-size: 12px;
+}
+
+.changeSumBottom{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.changeSumBottom span {
+    font-size: 12px;
+}
