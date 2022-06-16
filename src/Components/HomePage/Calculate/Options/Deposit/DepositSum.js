@@ -24,6 +24,7 @@ export default function DepositSum() {
   const openInput= () => { 
     setIsOpenInput(true)
   }
+
   const onSubmit = data => {
     const inputSum = +data.inputSum 
     if(inputSum >=50000 && inputSum <=2000000){
@@ -33,18 +34,14 @@ export default function DepositSum() {
       dispatch(setDepositSum(value))
     }else{
        alert("Min 50000 , max  2.000.000")
-      //  dispatch(setDepositSum(250000))
        setIsOpenInput(false)
-       
-   }
-   
-  };
+   }  
+};
   
   dispatch(setDepositSum(value))
   sessionStorage.setItem('DepositSum',value)
   return (
-    <div style={{width : 300}}>
-        
+    <div style={{width : 300}}>      
         <div  >
             <div style={{display : "flex" , justifyContent : "space-between"}}
                 className='changeSum'>
@@ -53,9 +50,9 @@ export default function DepositSum() {
                 </label>     
                 {isOpenInput && 
                 
-                   <form onSubmit={handleSubmit(onSubmit)} >
-                   <label> 
-                    <input
+                <form  onSubmit={handleSubmit(onSubmit)} >
+                   <label > 
+                    <input style={{ width : "100px"}}
                       {...register("inputSum", {
                         // required: "*Field is required",
                           minLength : {
@@ -67,7 +64,6 @@ export default function DepositSum() {
                     />
                     
                       {errors?.inputSum && <span>{errors?.inputSum?.message || "Error!"}</span>}
-                      
                   </label> 
                 </form>
                 

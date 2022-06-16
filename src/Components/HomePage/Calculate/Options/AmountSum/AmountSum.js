@@ -1,7 +1,7 @@
 import * as React from "react";
 import Slider from "@mui/material/Slider";
 import './AmountSum.css'
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setSum } from "../../../../../Redux/slices/sum/sum";
 import { useForm } from "react-hook-form";
 
@@ -25,6 +25,7 @@ export default function AmountSum() {
   const openInput= () => { 
     setIsOpenInput(true)
   }
+
   const onSubmit = data => {
     const inputSum = +data.inputSum 
     if(inputSum >=250000 && inputSum <=10000000){
@@ -35,7 +36,6 @@ export default function AmountSum() {
 
     }else{
        alert("Min 250.000 , max  10.000.000")
-      //  dispatch(setSum(250000))
        setIsOpenInput(false)
        
    }
@@ -54,10 +54,11 @@ export default function AmountSum() {
                <label onClick={openInput}> <span style={{cursor : "pointer"}}  >  {!isOpenInput && valueLabelFormat(value.toLocaleString())} </span>
                 </label>     
                 {isOpenInput && 
-                
-                   <form onSubmit={handleSubmit(onSubmit)} >
+                  <div style={{ display : "flex"}}>
+                    
+                    <form onSubmit={handleSubmit(onSubmit)} >
                    <label> 
-                    <input
+                    <input style={{ width : "100px"}}
                       {...register("inputSum", {
                         // required: "*Field is required",
                           minLength : {
@@ -71,7 +72,12 @@ export default function AmountSum() {
                       {errors?.inputSum && <span>{errors?.inputSum?.message || "Error!"}</span>}
                       
                   </label> 
+                  
                 </form>
+                <button onClick={()=> setIsOpenInput(false)}> X </button>
+
+                  </div>
+                   
                 
                 }
             </div>

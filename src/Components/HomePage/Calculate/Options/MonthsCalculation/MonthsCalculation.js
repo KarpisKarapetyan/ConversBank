@@ -3,43 +3,29 @@ import * as React from 'react';
 import Slider from '@mui/material/Slider';
 import { useDispatch } from 'react-redux';
 import { setMonths } from '../../../../../Redux/slices/Months/Months';
-// import MonthlyPaid from '../MonthlyPaid/MonthlyPaid'
+import { useConvertYear } from '../../../../../Hooks/useMonthsConvertYear';
 
-function getWords(monthCount, scaledValue) { 
+
+export default function MonthsCalculation() {
+  const [value, setValue] = React.useState( sessionStorage.getItem('MonthsSum') || 10);
+  const dispatch = useDispatch()
+  const monthsConvertYear = useConvertYear
   
-    function getPlural(number, word) {
-        return number === 1 && word.one || word.other;
-    }
-    let months = { one: 'ամիս', other: 'ամիս' },
-        years = { one: 'տարի', other: 'տարի' },
-        m = monthCount % 12,
-        y = Math.floor(monthCount / 12),
-        result = [];
+  function calculateValue(value) {
+    return value;
+  }  
 
-    y && result.push(y + ' ' + getPlural(y, years));
-    m && result.push(m + ' ' + getPlural(m, months));
-    scaledValue = result.join(' ');
-    return scaledValue
-} 
-
-function valueLabelFormat(value) {
+  function valueLabelFormat(value) {
     
     let scaledValue = null
     if(value<=12){
         scaledValue = value;
         return `${scaledValue} ամիս`;
     }
-        scaledValue = getWords(value , scaledValue)
+        scaledValue = monthsConvertYear(value , scaledValue)
         return scaledValue
 }
 
-function calculateValue(value) {
-  return value;
-}
-
-export default function MonthsCalculation() {
-  const [value, setValue] = React.useState( sessionStorage.getItem('MonthsSum') || 10);
-  const dispatch = useDispatch()
   const handleChange = (event, newValue) => {
     if (typeof newValue === 'number') {
       setValue(newValue);

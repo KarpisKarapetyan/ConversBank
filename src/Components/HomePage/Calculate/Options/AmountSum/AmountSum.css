@@ -19,3 +19,11 @@
 .changeSumBottom span {
     font-size: 12px;
 }
+
+/* .changeSum input:not(:focus),
+.changeSum input:focus + span  {
+    opacity: 0;
+    width: 0;
+    position: absolute;
+} */
+

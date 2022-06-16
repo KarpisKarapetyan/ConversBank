@@ -6,33 +6,35 @@ import OptionsInfo from '../OptionsInfo/OptionsInfo'
 import './MonthlyPaid.css'
 
 function MonthlyPaid (){
-    const sum = useSelector(sumSelector)
-    const months = useSelector(monthsSelector)
-    const percent = Math.round(sum*16.9/100)
-    const finalSum =  Math.round(percent + sum/months)
+    const principal = useSelector(sumSelector)
+    const interest = 16.9/100/12;
+    const payments = useSelector(monthsSelector) 
+    const x = Math.pow(1 + interest, payments);
+    const monthly = (principal*x*interest)/(x-1);
 
-    // const x = Math.pow(1 + calcInterest , months)
-    // const monthly = (sum * x * calcInterest) / (x-1)
-    // const calcInterest = 16.9/100/12
-    // console.log(finalSum)
-    // if (isFinite(monthly)) {
-    //     const monthlyPaymentCalculated = monthly.toFixed(2);
-    //     const totalPaymentCalculated = (monthly * months).toFixed(2);
-    //     const totalInterestCalculated = (monthly * months - sum).toFixed(2);
-   
-        
-    //     setResults({
-    //       monthlyPayment: monthlyPaymentCalculated,
-    //       totalPayment: totalPaymentCalculated,
-    //       totalInterest: totalInterestCalculated,
-    //       isResult: true,
-    //     });
-    //   }
+
+
+    let monthsPayment = 0
+    let totalValue= 0
+    let persentValue = 0
+
+    if (!isNaN(monthly) && 
+        (monthly != Number.POSITIVE_INFINITY) &&
+        (monthly != Number.NEGATIVE_INFINITY)) {
+        monthsPayment = Math.round(monthly);
+        totalValue = Math.round(monthly * payments);
+        persentValue = Math.round((monthly * payments) - principal);
+    } else {
+        monthsPayment = 0
+        totalValue= 0
+        persentValue = 0
+    }
+
     return(
         <div className='MonthlyPaidCont'>
          <div className='MonthlyPaidMain'>
             <span className='MonthlyPaidFirstSpan'> Ամսեկան վճար </span>         
-            <span className='amountMoney'> {finalSum}  </span>
+            <span className='amountMoney'> {monthsPayment}  </span>
             <Divider/>
         </div>
         <OptionsInfo/>

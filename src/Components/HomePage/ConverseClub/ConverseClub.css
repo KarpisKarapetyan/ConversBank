@@ -1,0 +1,21 @@
+.ConverseClub{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto;
+    background: #666666;
+    opacity: 0.8;
+    padding: 0 40px;
+    border-radius: 20px;
+    width:  80%;
+    height: 161px;
+}
+.clubTitle {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+
+}

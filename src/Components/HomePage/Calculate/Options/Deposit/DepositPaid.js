@@ -10,12 +10,11 @@ function DepositPaid (){
     const months = useSelector(DepositMonthsSelector)
     const percent = Math.round(sum*16.9/100)
     const finalSum =  Math.round(percent + sum/months)
-    // console.log(finalSum)
+    
     return(
         <div className='MonthlyPaidCont'>
          <div className='MonthlyPaidMain'>
             <span className='MonthlyPaidFirstSpan'> Ամսեկան վճար </span>
-            
             <span className='amountMoney'> {finalSum}  </span>
             <Divider/>
         </div>

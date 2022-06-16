@@ -1,5 +1,4 @@
 import './Options.css'
-
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
@@ -12,8 +11,6 @@ import MonthlyPaid from './MonthlyPaid/MonthlyPaid';
 import DepositSum from './Deposit/DepositSum';
 import DepositMonths from './Deposit/DepositMonths';
 import DepositPaid from './Deposit/DepositPaid';
-// import MonthlyPaid from './MonthlyPaid/MonthlyPaid';
-// import OptionsInfo from './OptionsInfo/OptionsInfo';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -57,7 +54,7 @@ export default function Options() {
   return (
     <Box sx={{ width: '100%' }}>
       <Box >
-      <div className='titleCalc'> Հաշվիչ</div>
+      <div className='titleCalc'> Հաշվիչ </div>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab className='option' label="Վարկ" {...a11yProps(0)} />
           <Tab className='option' label="Ավանդ" {...a11yProps(1)} />
@@ -65,26 +62,23 @@ export default function Options() {
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        <div className='calc_fields'>
-        <AmountSum/>
-        <MonthsCalculation />
-        </div>
-        <div className='calc_value'>
-          <MonthlyPaid/>
-       </div>    
+          <div className='calc_fields'>
+          <AmountSum/>
+          <MonthsCalculation />
+          </div>
+          <div className='calc_value'>
+            <MonthlyPaid/>
+          </div>    
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <div className='calc_fields'>
-      <DepositSum/>
-      <DepositMonths/>
-      </div>
-      <div className='calc_value'>
-          <DepositPaid/>
-       </div>
-
-      
-      
-      </TabPanel>
+          <div className='calc_fields'>
+          <DepositSum/>
+          <DepositMonths/>
+          </div>
+          <div className='calc_value'>
+              <DepositPaid/>
+          </div>
+          </TabPanel>
       <TabPanel value={value} index={2}>
         Պարտատոմսեր
       </TabPanel>

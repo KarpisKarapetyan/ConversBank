@@ -1,0 +1,27 @@
+.ConversPointsContanier{
+    width: 387px;
+    height: 409px;
+    /* left: 933px;
+    top: 774px; */
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+}
+.clubInfo{
+    width: 1200px;
+    justify-content: space-between;
+}
+
+.pointsTitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 60px;
+    color: #333333;
+}
+.pointsMainBox{
+    margin-left: 40px;
+}

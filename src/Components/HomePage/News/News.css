@@ -1,0 +1,13 @@
+․newsMain{
+    width:  80%;
+    margin: 20px auto;
+    opacity: 0.8;
+    padding: 0 40px;
+    border-radius: 20px;
+    
+}
+allNews{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

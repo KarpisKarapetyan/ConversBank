@@ -1,0 +1,63 @@
+
+  .slick-slide {
+    display: block;
+    float: left;
+  }
+
+  .giftBox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 1px rgb(199, 199, 199) solid;
+    border-radius: 10px;
+  }
+  .giftBox img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .main_slider .slick-arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: transparent !important;
+    border: none;
+    padding: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  .main_slider .slick-arrow:before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: solid rgb(2, 2, 2);
+    border-width: 0 0 2px 2px;
+    transform-origin: center;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  .main_slider .slick-prev {
+    left: 20px;
+  }
+
+  .main_slider .slick-next {
+    right: 20px;
+    left: auto;
+  }
+
+  .main_slider .slick-prev:before {
+    transform: rotate(45deg);
+  }
+  .main_slider .slick-next:before {
+    transform: rotate(225deg)
+  }
