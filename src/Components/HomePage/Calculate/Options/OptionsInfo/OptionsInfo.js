@@ -15,7 +15,7 @@ function OptionsInfo (){
             </div>
             <div> <span> Հաշվարկները կրում են մոտավոր բնույթ </span> </div>
             <div> 
-                <button onClick={goToDetails} > Մանրամասն </button>
+                <button className='calcButton' onClick={goToDetails} > Մանրամասն </button>
             </div>
 
         </div>

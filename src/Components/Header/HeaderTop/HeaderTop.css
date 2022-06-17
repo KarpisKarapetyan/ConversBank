@@ -1,0 +1,31 @@
+.HeaderTop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 59px;
+    background-color: #F2F2F2;
+}
+
+.HeaderTopSpan {
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #666666;
+    opacity: 0.8;
+}
+
+
+.btnBanking {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    width: 130px;
+    height: 32px;
+    background: #F78E1E;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}

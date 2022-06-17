@@ -1,8 +1,8 @@
 .homePage{
     background-color:  #E5E5E5;
+    width: 100vw;
 }
 .mainHome{
-    width: 100vw;
     height: 50vh;
     display: flex;
     justify-content: center;

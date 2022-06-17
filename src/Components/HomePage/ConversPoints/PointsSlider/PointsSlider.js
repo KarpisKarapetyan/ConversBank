@@ -56,8 +56,14 @@ export default function PointsSlider() {
                             <div className='giftBox' >
                               
                                  <img src={item.img} className="sliderimg" alt=""/>
-                                 <p> { item.title }</p>
-                                <NavLink to='/'> {item.message}  </NavLink>
+                                 <NavLink  to='/' 
+                                           style={isActive => ({
+                                              color: isActive ?  "#007DC3": "green",
+                                              textDecoration : 'none'
+                                            })}
+                                 > { item.title } </NavLink>
+                                 <p> {item.message}  </p>
+                                
                             </div>
                  </div>
                

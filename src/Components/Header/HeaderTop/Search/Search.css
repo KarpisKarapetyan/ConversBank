@@ -1,0 +1,8 @@
+.errorMessage{
+    text-align: left;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    font-size: 12px;
+    color: rgb(253, 2, 2);
+}

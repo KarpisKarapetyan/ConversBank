@@ -56,7 +56,9 @@ function Links (){
                  <div key={i} className='linksCont'>
                             <div style={{ display : "flex" , alignItems: 'center' ,gap: "21px" }} >
                                 <img src={item.img} /> 
-                                <Link  to={item.link}> {item.name}  </Link>
+                                <Link  to={item.link} 
+                                         
+                                > {item.name}  </Link>
                             </div>
                             
                  </div>

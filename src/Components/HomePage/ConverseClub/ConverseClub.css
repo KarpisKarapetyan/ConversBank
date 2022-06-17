@@ -10,6 +10,16 @@
     width:  80%;
     height: 161px;
 }
+.ConverseClub button {
+    padding: 16px 48px;
+    gap: 10px;
+    width: 195px;
+    height: 49px;
+    cursor: pointer;
+    background: #F78E1E;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
 .clubTitle {
     display: block;
     font-family: 'Poppins';
@@ -17,5 +27,4 @@
     font-weight: 500;
     font-size: 28px;
     line-height: 42px;
-
 }

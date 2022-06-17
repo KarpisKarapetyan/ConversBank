@@ -12,7 +12,7 @@ export default  function ConverseClub  () {
                     
                 </div>
                 <div>
-                     <button>Ավելին</button>  
+                     <button >Ավելին</button>  
                 </div>
                                    
                 

@@ -2,3 +2,15 @@
     justify-content: space-between;
     /* width: 360px; */
 }
+
+.calcButton{
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    width: 220px;
+    height: 40px;
+    background: #007DC3;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}

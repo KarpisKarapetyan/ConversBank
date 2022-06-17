@@ -3,5 +3,33 @@
         {
             
         }
+    ],
+    "users": [
+        {
+            "name" : "Karpis",
+            "age"  : "28",
+            "profession" : "React JS"
+        },
+        {
+            "name" : "Aram",
+            "age"  : "36",
+            "profession" : "PM"
+        },
+        {
+            "name" : "Aram",
+            "age"  : "3",
+            "profession" : "PMMMMMMM"
+        },
+        {
+            "name" : "Artur",
+            "age"  : "40",
+            "profession" : "JS Developer"
+        },
+        {
+            "name" : "Ggrig",
+            "age"  : "21",
+            "profession" : "HTML CSS"
+        }
     ]
+
 }

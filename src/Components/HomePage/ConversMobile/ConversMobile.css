@@ -1,0 +1,30 @@
+.ConversMobileMain{
+    display: flex;
+    width: 60%;
+    margin: 105px auto;
+}
+.ConversMobileMain p{
+    width: 235px;
+    height: 42px;
+    left: 294px;
+    top: 1993px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 42px;
+    color: #333333;
+}
+.ConversMobileMain span {
+    width: 450px;
+    height: 42px;
+    left: 294px;
+    top: 2045px;
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    
+}

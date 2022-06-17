@@ -1,6 +1,7 @@
 import { Calculate } from './Calculate/Calculate'
 import Links from './Carousel/Links'
 import ConverseClub from './ConverseClub/ConverseClub'
+import ConversMobile from './ConversMobile/ConversMobile'
 import ConversPoints from './ConversPoints/ConversPoints'
 import './Homepage.css'
 import News from './News/News'
@@ -20,6 +21,7 @@ export const HomePage = () =>{
         </div>
        <ConverseClub/>
        <News/>
+       <ConversMobile/>
         </div>
         
     )
