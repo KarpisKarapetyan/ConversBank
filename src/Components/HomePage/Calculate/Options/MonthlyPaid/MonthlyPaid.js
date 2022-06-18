@@ -33,7 +33,7 @@ function MonthlyPaid (){
     return(
         <div className='MonthlyPaidCont'>
          <div className='MonthlyPaidMain'>
-            <span className='MonthlyPaidFirstSpan'> Ամսեկան վճար </span>         
+            <span className='MonthlyTitle'> Ամսեկան վճար </span>         
             <span className='amountMoney'> { resualt  }  </span>
             <Divider/>
         </div>

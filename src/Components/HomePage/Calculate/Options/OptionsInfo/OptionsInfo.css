@@ -1,9 +1,12 @@
-.OptionsInfoMain{
+.pracentDiv{
+    display: flex;
     justify-content: space-between;
-    /* width: 360px; */
+    width: 100%;
+    margin: 10px 0;
 }
 
 .calcButton{
+    display: block;
     border: none;
     text-align: center;
     text-decoration: none;

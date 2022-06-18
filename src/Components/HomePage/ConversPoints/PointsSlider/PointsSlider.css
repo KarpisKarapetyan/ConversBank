@@ -27,6 +27,7 @@
     height: 40px;
     background: transparent !important;
     border: none;
+    margin-right: 45px;
     padding: 0;
     display: flex !important;
     align-items: center;

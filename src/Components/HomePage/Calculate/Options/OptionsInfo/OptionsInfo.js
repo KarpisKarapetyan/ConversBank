@@ -8,17 +8,14 @@ function OptionsInfo (){
     }
 
     return (
-        <div>
-            <div className='OptionsInfoMain'>
-                <span> Տոկոսադրույք</span>
-                <span>  16.9 % </span>
+        <>  
+            <div className='pracentDiv' >
+                <span > Տոկոսադրույք </span>
+                <span style={{fontWeight : "bold"}} > 16.9 % </span>
             </div>
-            <div> <span> Հաշվարկները կրում են մոտավոր բնույթ </span> </div>
-            <div> 
-                <button className='calcButton' onClick={goToDetails} > Մանրամասն </button>
-            </div>
-
-        </div>
+             <span style={{display:"inline-block" , margin: "10px 0"}}> Հաշվարկները կրում են մոտավոր բնույթ </span> 
+             <button className='calcButton' onClick={goToDetails} > Մանրամասն </button>
+        </>
     )
 }
 export default OptionsInfo
