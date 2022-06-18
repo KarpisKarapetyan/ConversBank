@@ -1,5 +1,30 @@
 .HeaderMain{
-    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
     height: 70px;
+    margin: 0 auto;
     background-color: #FFFFFF;
+}
+.HeaderMain button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    width: 74px;
+    height: 34px;
+    background: #E5F2F9;
+    border-radius: 10px;
+    color: #007DC3;
+    cursor: pointer;}
+
+
+li{
+    list-style: none;
+    color: #333333;
+}
+.headerLinks{
+    text-decoration: none;
+    color: #333333;
+    
 }

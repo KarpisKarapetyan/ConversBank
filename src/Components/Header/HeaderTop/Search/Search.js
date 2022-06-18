@@ -15,8 +15,8 @@ export default function  Search () {
     const [ placeholderValue ,setPlaceholderValue ] = useState("search")
 
     const onSubmit = (data) => {
-      
-      const {search}  = data
+    const {search}  = data
+    
       if(search.trim()){
         axios.get(`${mainUrl}/users`)
       .then((res) => {

@@ -4,16 +4,45 @@ import Slider from '@mui/material/Slider';
 import { useDispatch } from 'react-redux';
 import { setMonths } from '../../../../../Redux/slices/Months/Months';
 import { useConvertYear } from '../../../../../Hooks/useMonthsConvertYear';
+import { ClickAwayListener } from '@mui/material';
+import { useForm } from "react-hook-form";
+
 
 
 export default function MonthsCalculation() {
   const [value, setValue] = React.useState( sessionStorage.getItem('MonthsSum') || 10);
   const dispatch = useDispatch()
   const monthsConvertYear = useConvertYear
+  const [isOpenInput , setIsOpenInput] = React.useState(false)
+  const {register,handleSubmit,formState: { errors }} = useForm();
   
+
+
+  
+  const openInput= () => { 
+    setIsOpenInput(true)
+  }
+
   function calculateValue(value) {
     return value;
   }  
+
+  const onSubmit = data => {
+    const inputSum = Math.round(+data.inputSum *12)
+
+    console.log(inputSum)
+    if(inputSum >=6 && inputSum <=60){
+      setIsOpenInput(false)
+      setValue(inputSum)
+      dispatch(setMonths(value))
+
+    }else{
+       alert("Min 6 ամիս , max  5 տարի")
+       setIsOpenInput(false)
+       
+   }
+   
+  };
 
   function valueLabelFormat(value) {
     
@@ -31,16 +60,50 @@ export default function MonthsCalculation() {
       setValue(newValue);
     }
   };
+
+  const handleClickAway = () => {
+    setIsOpenInput(false);
+  };
+
   dispatch(setMonths(value))
   sessionStorage.setItem('MonthsSum' , value)
+
   return (
-    <>
+    <ClickAwayListener onClickAway={handleClickAway}>
+
     <div className='calc_field'>
       <div style={{width : 300, marginTop : 30}}>
         <div style={{display : "flex" , justifyContent : "space-between"}}
                 className='changeSum'>
                 <span> Վարկի ժամկետը</span>
-                <span> {valueLabelFormat(calculateValue(value))} </span>    
+                <label onClick={openInput}> <span style={{cursor : "pointer"}}  >  {!isOpenInput && valueLabelFormat(calculateValue(value)) } </span></label>
+                {isOpenInput && 
+                    <div style={{ display : "flex"}}>
+                      
+                      <form onSubmit={handleSubmit(onSubmit)} >
+                     <label> 
+                      <input style={{ width : "72px"}}
+                        {...register("inputSum", {
+                          // required: "*Field is required",
+                            maxLength : {
+                            value : 3,
+                            message : "*Max 3 characters!" }
+                         })}
+                        type="text"
+                        placeholder="տարի"
+                      />
+                      
+                        
+                    </label> 
+                    
+                  </form>
+
+  
+                        {errors?.inputSum && <span style={{display : 'block'}}>{errors?.inputSum?.message || "Error!"}</span>}
+                    </div>
+                     
+                  
+                  }  
             </div>
           <Slider
             size="small"
@@ -63,9 +126,11 @@ export default function MonthsCalculation() {
           
         </div>
     </div>
+    </ClickAwayListener>
+
       
         
-    </>
+  
     
   );
 }
