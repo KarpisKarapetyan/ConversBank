@@ -1,8 +1,9 @@
-import * as React from "react";
+
 import Slider from "@mui/material/Slider";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { setDepositSum } from "../../../../../Redux/slices/DepositSum/DepositSum";
 import { useForm } from "react-hook-form";
+import { useState } from "react";
 
 const valueLabelFormat = (value)=> {
   let scaledValue = value;
@@ -15,9 +16,9 @@ const sum = (value)=> {
 
 
 export default function DepositSum() {
-  const [value, setValue] = React.useState( sessionStorage.getItem('DepositSum') ||  750000);
+  const [value, setValue] = useState( sessionStorage.getItem('DepositSum') ||  750000);
   const dispatch = useDispatch()
-  const [isOpenInput , setIsOpenInput] = React.useState(false)
+  const [isOpenInput , setIsOpenInput] = useState(false)
   const {register,handleSubmit,formState: { errors }} = useForm();
   const handleChange = (event, newValue) =>  setValue(newValue);
   

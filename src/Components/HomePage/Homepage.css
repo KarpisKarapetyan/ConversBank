@@ -2,10 +2,25 @@
     background-color:  #E5E5E5;
     width: 100vw;
 }
-.mainHome{
-    height: 50vh;
+.calcMain{
+    height: 55vh;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
+.caruselLinks{
+    width: 90%;
+    margin: 0 auto;
+}
+.caruselLinks .slick-prev:before , .caruselLinks .slick-next:before{
+    font-size: 52px !important;
+    color: black;
+}
+.caruselLinks .slick-prev {
+    left: 25px !important;
+}
+.caruselLinks .slick-next {
+    right: 25px !important;
+}
+

@@ -1,3 +1,4 @@
+import Banner from './Banner/Banner'
 import { Calculate } from './Calculate/Calculate'
 import Links from './Carousel/Links'
 import ConverseClub from './ConverseClub/ConverseClub'
@@ -9,19 +10,22 @@ import News from './News/News'
 export const HomePage = () =>{
     return (
         <div className='homePage'>
-        <div className="mainHome">
-            <div style={{display : "flex",gap : "20px" }} >
-                <Calculate/>
-                <ConversPoints/>
-            </div>
+           <div className='navBanner'> <Banner/> </div>
             
-        </div >
-        <div style={{ marginTop : "20px" }}>
-            <Links />
-        </div>
-       <ConverseClub/>
-       <News/>
-       <ConversMobile/>
+            
+            <div className="calcMain">
+                <div style={{display : "flex",gap : "20px",marginTop : '10px' }} >
+                    <Calculate/>
+                    <ConversPoints/>
+                </div>
+                
+            </div >
+            <div className='caruselLinks' >
+                <Links />
+            </div>
+            <ConverseClub/>
+            <News/>
+            <ConversMobile/>
         </div>
         
     )

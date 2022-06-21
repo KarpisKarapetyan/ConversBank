@@ -1,13 +1,13 @@
-import * as React from 'react';
 import Box from '@mui/material/Box';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import './Rate.css'
 import BasicTabs from './Tabs/Tabs';
 import dayjs from "dayjs"
+import { useState } from 'react';
 
 export default function Rate() {
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const date = Date.now()
   const formattedDate = dayjs (date).format('DD/MM/YYYY ')
 

@@ -1,5 +1,4 @@
 import './Options.css'
-import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -11,6 +10,7 @@ import MonthlyPaid from './MonthlyPaid/MonthlyPaid';
 import DepositSum from './Deposit/DepositSum';
 import DepositMonths from './Deposit/DepositMonths';
 import DepositPaid from './Deposit/DepositPaid';
+import { useState } from 'react';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -46,7 +46,7 @@ function a11yProps(index) {
 }
 
 export default function Options() {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };

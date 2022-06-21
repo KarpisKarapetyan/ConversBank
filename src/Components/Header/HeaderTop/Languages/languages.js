@@ -1,10 +1,11 @@
-import * as React from 'react';
+
 import Box from '@mui/material/Box';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
+import { useState } from 'react';
 import languageImage from '../../../HomePage/ConversPoints/PointsSlider/img/languages.png'
 
 export default function ChangeLanguages() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClick = () => {
     setOpen((prev) => !prev);
