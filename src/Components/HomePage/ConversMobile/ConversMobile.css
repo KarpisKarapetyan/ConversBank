@@ -2,6 +2,7 @@
     display: flex;
     width: 60%;
     margin: 105px auto;
+    gap: 100px;
 }
 .ConversMobileMain p{
     width: 235px;
@@ -14,6 +15,7 @@
     font-size: 28px;
     line-height: 42px;
     color: #333333;
+   
 }
 .ConversMobileMain span {
     width: 450px;
@@ -25,6 +27,5 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    color: #333333;
-    
+    color: #333333; 
 }
