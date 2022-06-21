@@ -3,7 +3,8 @@
     width: 100vw;
 }
 .mainHome{
-    height: 50vh;
+    
+    min-height: 409px;
     display: flex;
     justify-content: center;
     align-items: center;
