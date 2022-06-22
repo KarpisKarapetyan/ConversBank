@@ -1,7 +1,7 @@
 .ConversMobileMain{
     display: flex;
     width: 60%;
-    margin: 105px auto;
+    margin: 0 auto  ;
     gap: 100px;
 }
 .ConversMobileMain p{

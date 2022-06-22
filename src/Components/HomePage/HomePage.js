@@ -25,7 +25,7 @@ export const HomePage = () =>{
             </div>
             <ConverseClub/>
             <News/>
-            <ConversMobile/>
+            <ConversMobile style= {{display:'flex' , justifyContent : 'center' , alignItems : 'center'}} />
         </div>
         
     )

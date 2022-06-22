@@ -43,7 +43,7 @@ export default function News () {
                 <NavLink className='navLinkNews' to="///"> Բոլոր Նորությունները </NavLink>
             </div>
        </div>
-       <div style={{display : 'flex', justifyContent : 'center', alignItems: 'center', gap: "20px"}}>
+       <div style={{display : 'flex', justifyContent : 'center', alignItems: 'center', gap: "20px", marginBottom : '105px'}}>
        {
         news.map((item, i )=>{
             return (
