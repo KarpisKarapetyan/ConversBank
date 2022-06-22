@@ -16,6 +16,9 @@
 .caruselLinks .slick-slide {
     margin-right: 20px;
 }
+.caruselLinks .slick-list{
+    padding:  0px 0px !important;
+}
 
 .caruselLinks .slick-prev:before , .caruselLinks .slick-next:before{
     font-size: 52px !important;
