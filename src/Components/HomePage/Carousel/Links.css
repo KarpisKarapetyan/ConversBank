@@ -1,7 +1,32 @@
-.linksCont{
-    
-    gap: 5px;
-    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+.linksMain{
     border-radius: 20px;
     background-color: rgb(255, 253, 253);
 }
+.linksItem{
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+}
+.caruselLinks{
+    max-height: 140px;
+}
+.caruselLinks .slick-slide {
+    margin-right: 20px;
+}
+
+.caruselLinks .slick-prev:before , .caruselLinks .slick-next:before{
+    font-size: 52px !important;
+    color: #000000;
+}
+.caruselLinks .slick-prev {
+    left: 80px !important;
+    top: 25%;
+}
+.caruselLinks .slick-next {
+    right: 80px !important;
+    top: 25%;
+}
+
