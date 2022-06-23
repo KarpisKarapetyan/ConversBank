@@ -22,7 +22,7 @@ export default function FooterInput () {
             <span> Բաժանորդագրվել </span>
             <form onSubmit={handleSubmit(onSubmit)} className='footerForm' >
               <div className='footerInputDIV'>
-                     <label> 
+                     <label > 
                       <input 
                         {...register("inputVal", {
                             mixLength : {
