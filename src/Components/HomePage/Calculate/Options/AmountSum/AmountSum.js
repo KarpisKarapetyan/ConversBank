@@ -1,4 +1,3 @@
-import * as React from "react";
 import Slider from "@mui/material/Slider";
 import './AmountSum.css'
 import { useDispatch } from "react-redux";
@@ -6,16 +5,12 @@ import { setSum } from "../../../../../Redux/slices/sum/sum";
 import { useForm } from "react-hook-form";
 import { ClickAwayListener } from "@mui/material";
 import { symbolRate } from "../../../../../helpers/constants";
-
-
-
-
-
+import { useState } from "react";
 
 export default function AmountSum() {
-  const [value, setValue] = React.useState(sessionStorage.getItem('AmountSum') || 1110000);
+  const [value, setValue] = useState(sessionStorage.getItem('AmountSum') || 1110000);
   const dispatch = useDispatch()
-  const [isOpenInput , setIsOpenInput] = React.useState(false)
+  const [isOpenInput , setIsOpenInput] = useState(false)
   const {register,handleSubmit,formState: { errors }} = useForm();
   const handleChange = (event, newValue) =>  setValue(newValue);
   const simbolDram = symbolRate[0]

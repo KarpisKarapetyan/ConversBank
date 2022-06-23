@@ -14,11 +14,12 @@ function Links (){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
+        centerMode: true,
         arrows: true,
         fade: false,
         speed: 1000,
         autoplaySpeed: 5000,
-        className: 'main_slider'
+        className: 'slider variable-width'
     };
     
 
@@ -56,13 +57,10 @@ function Links (){
                  <div key={i} className='linksCont'>
                             <div style={{ display : "flex" , alignItems: 'center' ,gap: "21px" }} >
                                 <img src={item.img} /> 
-                                <Link  to={item.link} 
-                                         
+                                <Link  to={item.link}       
                                 > {item.name}  </Link>
-                            </div>
-                            
-                 </div>
-               
+                            </div>                           
+                 </div>           
                  ))}   
              </SlickSlider>        
     )

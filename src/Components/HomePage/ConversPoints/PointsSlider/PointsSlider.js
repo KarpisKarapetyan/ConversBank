@@ -1,7 +1,4 @@
-
-import React from "react";
 import gift from './img/gift.jpg'
-import image1 from './img/1.jpg'
 import image2 from './img/2.jpg'
 import image3 from './img/3.jpg'
 import image4 from './img/4.jpg'
@@ -48,13 +45,11 @@ export default function PointsSlider() {
     className: 'main_slider'
 };
 
-  return (
-    <>
+  return ( 
      <SlickSlider settings={SLIDER_SETTINGS}>
      {contentArr?.map((item , i)=>(
                  <div key={i}>
-                            <div className='giftBox' >
-                              
+                            <div className='giftBox' >       
                                  <img src={item.img} className="sliderimg" alt=""/>
                                  <NavLink  to='/' 
                                            style={isActive => ({
@@ -62,13 +57,10 @@ export default function PointsSlider() {
                                               textDecoration : 'none'
                                             })}
                                  > { item.title } </NavLink>
-                                 <p> {item.message}  </p>
-                                
+                                 <p> {item.message}  </p>                          
                             </div>
-                 </div>
-               
+                 </div>             
                  ))}    
-    </SlickSlider>
-    </>
+    </SlickSlider> 
   );
 }

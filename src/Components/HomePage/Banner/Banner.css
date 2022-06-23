@@ -1,0 +1,130 @@
+.navBanner .slick-slider.slick-initialized{
+    width: 100%;
+    min-height: 550px;
+}
+.bannerContent{
+    position: absolute;
+    top: 60px;
+    margin: 45px;
+    white-space: pre-line;
+}
+.bannerContent button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    width: 151px;
+    height: 49px;
+    background: #F78E1E;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    line-height: 17px;
+    cursor: pointer;
+}
+.bannerTitle{
+    width: 590px;
+    height: 162px;
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px;
+    color: #fff;
+    
+}
+.bannerMessage{
+    display: block;
+    margin: 30px 0;
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+}
+.navBanner img {
+    width: 100%;
+}
+.navBanner.slick-dots ul {
+    list-style-type: none;
+    margin: 0 -10px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100% !important;
+}
+
+.navBanner .slick-dots li {
+    width: 185px !important;
+    display: table-cell;
+    padding: 0 10px;
+    height: auto !important;
+    margin: 0;
+} 
+
+.navBanner .slick-dots{
+    bottom: 5px;
+    left: 0px;
+} 
+.css-eglki6-MuiLinearProgress-root { 
+    width: 185px;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+.css-5xe99f-MuiLinearProgress-bar1 { 
+    background-color:  #F78E1E!important;
+}
+.dotsDiv div { 
+    width: auto !important;
+}
+.linerTilte{
+    width: 292px !important;
+    background-color: rgb(255, 255, 255);
+    color:  #007DC3;;
+    text-align: center;
+    height: 66px;
+    border-radius: 20px;
+}
+
+ .slick-arrow {
+    width: 40px;
+    height: 40px;
+    background: transparent !important;
+    border: none;
+    padding: 0;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+   .main_slider .slick-arrow:before {
+    display: block;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: solid rgb(2, 2, 2);
+    border-width: 0 0 2px 2px;
+    transform-origin: center;
+    margin: 0;
+    font-size: 0;
+    line-height: 0;
+  }
+  .navBanner  .slick-prev {
+    top: 50%;
+    left: 1620px !important;
+  }
+
+  .navBanner .slick-next {
+    top: 50%;
+    right: 200px  !important;
+  }
+
+  .navBanner .main_slider .slick-prev:before {
+    transform: rotate(45deg);
+  }
+  .navBanner .main_slider .slick-next:before {
+    transform: rotate(225deg)
+  }
+  .navBanner .slick-prev:before , .navBanner .slick-next:before {
+    font-size: 30px !important;
+  }

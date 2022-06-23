@@ -24,7 +24,7 @@ function MonthlyPaid (){
         monthsPayment = Math.round(monthly);
         totalValue = Math.round(monthly * payments);
         persentValue = Math.round((monthly * payments) - principal);
-    } else {
+    }else {
         monthsPayment = 0
         totalValue= 0
         persentValue = 0
@@ -38,7 +38,6 @@ function MonthlyPaid (){
             <Divider/>
         </div>
         <OptionsInfo/>
-         
         </div>
        
     )

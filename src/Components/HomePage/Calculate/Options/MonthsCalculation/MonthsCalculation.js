@@ -1,23 +1,20 @@
 import './MonthsCalculation.css'
-import * as React from 'react';
 import Slider from '@mui/material/Slider';
 import { useDispatch } from 'react-redux';
 import { setMonths } from '../../../../../Redux/slices/Months/Months';
 import { useConvertYear } from '../../../../../Hooks/useMonthsConvertYear';
 import { ClickAwayListener } from '@mui/material';
 import { useForm } from "react-hook-form";
+import { useState } from 'react';
 
 
 
 export default function MonthsCalculation() {
-  const [value, setValue] = React.useState( sessionStorage.getItem('MonthsSum') || 10);
+  const [value, setValue] = useState( sessionStorage.getItem('MonthsSum') || 10);
   const dispatch = useDispatch()
   const monthsConvertYear = useConvertYear
-  const [isOpenInput , setIsOpenInput] = React.useState(false)
+  const [isOpenInput , setIsOpenInput] = useState(false)
   const {register,handleSubmit,formState: { errors }} = useForm();
-  
-
-
   
   const openInput= () => { 
     setIsOpenInput(true)

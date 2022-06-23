@@ -1,0 +1,40 @@
+.footerCont{
+    width: 100vw;
+    height: 601px;
+    background-color: #006CA8;
+}
+
+.footerTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+}
+.footerTop li{
+    text-decoration: none;
+}
+.footerLinks{
+    margin-bottom: 20px;
+}
+.footerMobileTitle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.footerMobileTitle span { 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.footerMobileSpan { 
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
