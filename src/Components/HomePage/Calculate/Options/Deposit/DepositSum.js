@@ -1,19 +1,8 @@
-
 import Slider from "@mui/material/Slider";
 import { useDispatch} from "react-redux";
 import { setDepositSum } from "../../../../../Redux/slices/DepositSum/DepositSum";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
-
-const valueLabelFormat = (value)=> {
-  let scaledValue = value;
-  return `${scaledValue}  Դ`;
-}
-
-const sum = (value)=> {
-  return value;
-}
-
 
 export default function DepositSum() {
   const [value, setValue] = useState( sessionStorage.getItem('DepositSum') ||  750000);
@@ -21,11 +10,10 @@ export default function DepositSum() {
   const [isOpenInput , setIsOpenInput] = useState(false)
   const {register,handleSubmit,formState: { errors }} = useForm();
   const handleChange = (event, newValue) =>  setValue(newValue);
-  
-  const openInput= () => { 
-    setIsOpenInput(true)
-  }
 
+  const valueLabelFormat = (value)=> `${value}  Դ`
+  const sum = (value)=>  value
+  const openInput= () => setIsOpenInput(true)
   const onSubmit = data => {
     const inputSum = +data.inputSum 
     if(inputSum >=50000 && inputSum <=2000000){

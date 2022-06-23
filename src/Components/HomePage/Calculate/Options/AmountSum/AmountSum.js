@@ -14,20 +14,11 @@ export default function AmountSum() {
   const {register,handleSubmit,formState: { errors }} = useForm();
   const handleChange = (event, newValue) =>  setValue(newValue);
   const simbolDram = symbolRate[0]
-  const openInput= () => { 
-    setIsOpenInput(true)
-  }
 
-  const valueLabelFormat = (value)=> {
-    
-    let scaledValue = value;
-    return `${scaledValue}  ${simbolDram}`;
-  }
-
-  const sum = (value)=> {
-  return value;
-}
-
+  const openInput= () => setIsOpenInput(true)
+  const valueLabelFormat = (value)=> `${value}  ${simbolDram}`;
+  const sum = (value)=> value;
+  const handleClickAway = () => setIsOpenInput(false);
   const onSubmit = data => {
     const inputSum = +data.inputSum 
     if(inputSum >=250000 && inputSum <=10000000){
@@ -35,36 +26,25 @@ export default function AmountSum() {
       setIsOpenInput(false)
       setValue(inputSum)
       dispatch(setSum(value))
-
     }else{
        alert("Min 250.000 , max  10.000.000")
        setIsOpenInput(false)
-       
    }
-   
   };
-  const handleClickAway = () => {
-    setIsOpenInput(false);
-  };
-  
   dispatch(setSum(value))
   sessionStorage.setItem('AmountSum', value)
 
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
-
       <div style={{width : 300}}>
-          
           <div  >
               <div style={{display : "flex" , justifyContent : "space-between"}}
                   className='changeSum'>
                   <span> Որքան գումար է անհրաժեշտ</span>
                  <label onClick={openInput}> <span style={{cursor : "pointer"}}  >  {!isOpenInput && valueLabelFormat(value.toLocaleString('ru'))} </span>
-                  </label>   
-                  
+                  </label>                    
                   {isOpenInput && 
-                    <div style={{ display : "flex"}}>
-                      
+                    <div style={{ display : "flex"}}>                     
                       <form onSubmit={handleSubmit(onSubmit)} >
                      <label> 
                       <input style={{ width : "75px"}}
@@ -76,21 +56,13 @@ export default function AmountSum() {
                          })}
                         type="number"
                         placeholder="1.000.000"
-                      />
-                      
-                        {errors?.inputSum && <span>{errors?.inputSum?.message || "Error!"}</span>}
-                        
-                    </label> 
-                    
+                      />                      
+                        {errors?.inputSum && <span>{errors?.inputSum?.message || "Error!"}</span>}                        
+                    </label>    
                   </form>
-
-  
-                    </div>
-                     
-                  
-                  }
-               
-              </div>
+                </div>               
+              }
+            </div>
           <Slider
               size="small"
               value={value}
