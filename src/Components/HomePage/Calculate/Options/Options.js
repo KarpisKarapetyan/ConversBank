@@ -47,10 +47,8 @@ function a11yProps(index) {
 
 export default function Options() {
   const [value, setValue] = useState(0);
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
+  const handleChange = (event, newValue) => setValue(newValue);
+ 
   return (
     <Box sx={{ width: '100%' }}>
       <Box >

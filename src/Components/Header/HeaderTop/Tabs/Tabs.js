@@ -4,10 +4,11 @@ import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
+import { useTranslate } from '../../../../contexts/LanguageProvider';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
-
+ 
   return (
     <div
       role="tabpanel"
@@ -40,7 +41,7 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = useState(0);
-
+  const {t} = useTranslate();
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -49,8 +50,8 @@ export default function BasicTabs() {
     <Box >
       <Box sx={{  borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Անհատներ" {...a11yProps(0)} />
-          <Tab label="Բիզնես" {...a11yProps(1)} />
+          <Tab label= { t('individuals') } {...a11yProps(0)} />
+          <Tab label= { t('business') } {...a11yProps(1)} />
         </Tabs>
       </Box>
     </Box>
