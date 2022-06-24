@@ -22,7 +22,7 @@ export default function  ConversMobile () {
                 <span > Հայտնի է, որ ընթերցողը, կարդալով հասկանալի տեքստ, չի կարողանա կենտրոնանալ տեքստի ձևավորման վրա:</span>
                 <div style={{marginTop : '40px'}}> <ConversMobileButtons/> </div> 
             </div>
-            <img src={phones} />       
+            <img style={{marginBottom : '74px'}} src={phones} />       
         </div>
     )
 }
