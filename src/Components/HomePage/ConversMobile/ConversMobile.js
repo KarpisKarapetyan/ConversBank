@@ -8,7 +8,7 @@ export const ConversMobileButtons = () => {
         <div style={{ display : 'flex', gap : "22px" }}>
                     <div style={{ display : 'flex', gap : "10px" }}>
                       <a target='_blank' href='https://play.google.com/store/apps/details?id=am.conversebank.conversebankmobile.release&hl=hy&gl=US' rel="noreferrer"><img src={googlePlay}  /> </a>
-                      <a target='_blank' href='https://apps.apple.com/am/developer/converse-bank-cjsc/id1276985152' rel="noreferrer"><img src={appStore}  /> </a>
+                      <a target='_blank' href='https://apps.apple.com/am/app/converse-bank-mobile/id1577370609' rel="noreferrer"><img src={appStore}  /> </a>
                 </div>
                 </div>
     )
@@ -22,9 +22,9 @@ export default function  ConversMobile () {
                 <span > Հայտնի է, որ ընթերցողը, կարդալով հասկանալի տեքստ, չի կարողանա կենտրոնանալ տեքստի ձևավորման վրա:</span>
                 <div style={{marginTop : '40px'}}> <ConversMobileButtons/> </div> 
             </div>   
-            <images  >
-                    <img src={phones} ></img>
-            </images>
+            <div >
+                    <img src={phones} />
+            </div>
         </div>
     )
 }

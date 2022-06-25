@@ -20,8 +20,9 @@ export default function FooterInput () {
         <>
         <div className='footerInput'>
             <span> Բաժանորդագրվել </span>
-            <form onSubmit={handleSubmit(onSubmit)} >
-                     <label> 
+            <form onSubmit={handleSubmit(onSubmit)} className='footerForm' >
+              <div className='footerInputDIV'>
+                     <label > 
                       <input 
                         {...register("inputVal", {
                             mixLength : {
@@ -33,13 +34,19 @@ export default function FooterInput () {
                       />
                         {errors?.inputVal && <span>{errors?.inputVal?.message || "Error!"}</span>}  
                     </label> 
-                  <label style={{cursor : 'pointer'}}  onClick={handleSubmit(onSubmit)}><FaArrowRight/></label> 
-             
+                   
+              </div>
+              <label className='footerInputButton'   onClick={handleSubmit(onSubmit)}><FaArrowRight/></label> 
             </form>
 
         </div>
         <div className='socialIcons'>
-                   
+                   <NavLink target='_blank' to='/' ><img src={faceBookIcon}/></NavLink>
+                   <NavLink target='_blank' to='/' ><img src={twitterIcon}/></NavLink>     
+                   <NavLink target='_blank' to='/' ><img src={instaIcon}/></NavLink>     
+                   <NavLink target='_blank' to='/' ><img src={LinkedinIcon}/></NavLink>     
+                   <NavLink target='_blank' to='/' ><img src={youtubeIcon}/></NavLink>     
+                   <NavLink target='_blank' to='/' ><img src={VKIcon}/></NavLink>     
         </div>
         </>
     )

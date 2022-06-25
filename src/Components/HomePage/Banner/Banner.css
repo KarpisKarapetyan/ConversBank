@@ -46,7 +46,7 @@
 }
 .navBanner.slick-dots ul {
     list-style-type: none;
-    margin: 0 -10px;
+    /* margin: 0 -10px; */
     padding: 0;
     display: flex;
     align-items: center;
@@ -94,7 +94,7 @@
     display: flex !important;
     align-items: center;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
   }
   
    .main_slider .slick-arrow:before {
@@ -111,12 +111,12 @@
   }
   .navBanner  .slick-prev {
     top: 50%;
-    left: 1620px !important;
+    left: 85% !important;
   }
 
   .navBanner .slick-next {
     top: 50%;
-    right: 200px  !important;
+    right: 5%  !important;
   }
 
   .navBanner .main_slider .slick-prev:before {

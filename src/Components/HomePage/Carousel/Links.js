@@ -5,8 +5,6 @@ import bag from '../ConversPoints/PointsSlider/img/bag.png'
 import { Link} from 'react-router-dom'
 import SlickSlider from '../../slickSlider/slickSlider'
 
-
-
 function Links (){
 
     const SLIDER_SETTINGS = {
@@ -14,15 +12,14 @@ function Links (){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
+        className : 'slider variable-width',
         centerMode: true,
+        // centerPadding: "60px",
         arrows: true,
         fade: false,
         speed: 1000,
         autoplaySpeed: 5000,
-        className: 'slider variable-width'
     };
-    
-
     const linksData =  [
         {
             img : car,
@@ -54,11 +51,10 @@ function Links (){
     return (
              <SlickSlider settings={SLIDER_SETTINGS}>
                 {linksData?.map((item , i)=>(
-                 <div key={i} className='linksCont'>
-                            <div style={{ display : "flex" , alignItems: 'center' ,gap: "21px" }} >
+                 <div key={i} className='linksMain'>
+                            <div className='linksItem'>
                                 <img src={item.img} /> 
-                                <Link  to={item.link}       
-                                > {item.name}  </Link>
+                                <Link  to={item.link}> {item.name}  </Link>
                             </div>                           
                  </div>           
                  ))}   

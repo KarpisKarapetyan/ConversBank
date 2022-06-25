@@ -1,7 +1,7 @@
 .ConversMobileMain{
     display: flex;
     width: 60%;
-    margin: 105px auto;
+    margin: 0 auto  ;
     gap: 100px;
 }
 .ConversMobileMain p{
@@ -28,4 +28,10 @@
     font-size: 14px;
     line-height: 21px;
     color: #333333; 
+}
+.mobileCircles {
+    background-color:  #007DC3;
+    width: 1230px;
+    height: 1230px;
+    border-radius: 50%;
 }

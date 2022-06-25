@@ -4,9 +4,7 @@ import './Banner.css'
 import { BannerContent } from './bannerContent/BannerContent';
 import LinearDots from './LinearDots/LinerDots';
 
-
 export default function Banner(){
-
     const SLIDER_SETTINGS = {
         autoplay: true,
         arrows: true,
@@ -32,9 +30,6 @@ export default function Banner(){
         slidesToScroll: 1,
         initialSlide: 2,
     };
-
-    
-
     return (
         <SlickSlider  settings={SLIDER_SETTINGS}>
                 {bannerInfo?.map((item , i)=>(
