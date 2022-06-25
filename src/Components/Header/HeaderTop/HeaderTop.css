@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .HeaderTop{
     display: flex;
     justify-content: space-around;
@@ -8,6 +14,9 @@
 }
 
 .HeaderTopSpan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat arm';
     font-style: normal;
     font-weight: 500;
@@ -16,7 +25,6 @@
     color: #666666;
     opacity: 0.8;
 }
-
 
 .btnBanking {
     border: none;
@@ -28,4 +36,24 @@
     border-radius: 10px;
     color: white;
     cursor: pointer;
+}
+
+.globeDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    width: 83px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.globeDiv select { 
+    cursor: pointer;
+    border: none;
+    background: no-repeat;
+    text-decoration: none;
+    outline: none;
 }

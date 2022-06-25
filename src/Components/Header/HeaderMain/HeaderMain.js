@@ -8,7 +8,7 @@ export default function  HeaderMain () {
     return (
         <div className='HeaderMain'>
             <NavLink to='./HomePage'> <img src={mainLogo} /> </NavLink> 
-            {linksArr.map((link , i) =>(
+            {linksArr.map((link, i ) =>(
                    <NavLink key={i} to={link.link}  className='headerLinks' > {link.name }</NavLink> 
             ))}
               <NavLink to='/' >  <button>  Ակցիա  </button> </NavLink> 

@@ -5,34 +5,37 @@ import Location from './Location/Location'
 import Rate from './Rate/Rate'
 import Search from './Search/Search'
 import BasicTabs from './Tabs/Tabs'
-// import { LANGUAGES, useTranslate} from "../../contexts/LanguageProvider"
 import { useState } from 'react'
 import {  LANGUAGES , useTranslate } from '../../../contexts/LanguageProvider'
-import { getLanguage } from '../../../helpers/translation'
+import globe from '../../HomePage/ConversPoints/PointsSlider/img/globe.png'
+import ChangeLanguages from './Languages/languages'
 
 export default function  HeaderTop () {
-    const [langOption, setLangOption] = useState(localStorage.getItem("languageOption") || LANGUAGES[0])
+    const [langOption, setLangOption] = useState(localStorage.getItem('languagesOption') || LANGUAGES[0])
     const {t, changeLanguage} = useTranslate();
     const handleChangeLang = event => {
         setLangOption(event.target.value);
-        localStorage.setItem("languageOption" , event.target.value.toString() )
+        localStorage.setItem('languagesOption' , event.target.value.toString())
         changeLanguage(event.target.value);
     }
     return (
         <div className='HeaderTop'>
             <BasicTabs/>
             <div style={{display : "flex" , gap : '15px'}}>
-                <div style={{textAlign: 'center'}}> <span className='HeaderTopSpan'>  374 10 511 211 </span> </div>  
+                <div className='HeaderTopSpan' >   +374 10 511 211 </div>  
                <NavLink to='/'>  <button className='btnBanking'> {t("onlineBanking")} </button></NavLink>
                <Rate/>
                <Location/>
                <Search/>
                {/* <ChangeLanguages/> */}
-            <select value={langOption} onChange={handleChangeLang}>
-                <option value="AM">{t("armenian")}</option>
-                <option value="RU">{t("russian")}</option>
-                <option value="EN">{t("english")}</option>
-            </select> 
+               <label className='globeDiv'>
+               <img src={globe}/>
+                <select className='langSelect' value={langOption} onChange={handleChangeLang}>
+                    <option value="AM">{t("armenian")}</option>
+                    <option value="RU">{t("russian")}</option>
+                    <option value="EN">{t("english")}</option>
+                </select> 
+               </label>
             </div>
         </div>
     )

@@ -10,6 +10,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import { useTranslate } from '../../../../../contexts/LanguageProvider';
 
 function createData(name, take, sale) {
   return { name, take, sale};
@@ -61,7 +62,7 @@ function a11yProps(index) {
 
 export default function BasicTabs() {
   const [value, setValue] = React.useState(0);
-
+  const {t} = useTranslate();
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -70,8 +71,8 @@ export default function BasicTabs() {
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Տարադրամ" {...a11yProps(0)} />
-          <Tab label="Ոսկի" {...a11yProps(1)} />
+          <Tab label={ t('currency_Tab') }  {...a11yProps(0)} />
+          <Tab label= { t('gold') } {...a11yProps(1)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
@@ -80,9 +81,9 @@ export default function BasicTabs() {
       <Table sx={{ minWidth: 300 }} >
         <TableHead>
           <TableRow>
-            <TableCell>Արժույթ </TableCell>
-            <TableCell align="right">Առք</TableCell>
-            <TableCell align="right">Վաճառք</TableCell>
+            <TableCell> { t('currency') }   </TableCell>
+            <TableCell align="right"> { t('buy') }  </TableCell>
+            <TableCell align="right"> { t('sell') }  </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
