@@ -2,37 +2,99 @@ import banner1 from '../Components/HomePage/ConversPoints/PointsSlider/img/banne
 import banner2 from '../Components/HomePage/ConversPoints/PointsSlider/img/banner2.jpg'
 import banner3 from '../Components/HomePage/ConversPoints/PointsSlider/img/banner3.jpg'
 
-
 export const symbolRate = ["֏" , ' ' , ' ']
 export const linksArr = [
-    {
-        name : 'վարկեր',
-        link : '/'
-    },
-    {
-        name : 'Ավանդներ',
-        link : '/'
-    },
-    {
-        name : 'Քարտեր',
-        link : '/'
-    },
-    {
-        name : 'Հաշիվներ',
-        link : '/'
-    },
-    {
-        name : 'Փոխանցումներ',
-        link : '/'
-    },
-    {
-        name : 'Ներդրումներ',
-        link : '/'
-    },
-    {
-        name : 'Այլ ծառայություններ',
-        link : '/'
-    }
+    [
+        {
+            name : 'վարկեր',
+            link : '/'
+        },
+        {
+            name : 'Ավանդներ',
+            link : '/'
+        },
+        {
+            name : 'Քարտեր',
+            link : '/'
+        },
+        {
+            name : 'Հաշիվներ',
+            link : '/'
+        },
+        {
+            name : 'Փոխանցումներ',
+            link : '/'
+        },
+        {
+            name : 'Ներդրումներ',
+            link : '/'
+        },
+        {
+            name : 'Այլ ծառայություններ',
+            link : '/'
+        }
+    ],
+    [
+        {
+            name : 'кредиты',
+            link : '/'
+        },
+        {
+            name : 'Депозиты',
+            link : '/'
+        },
+        {
+            name : 'Карты',
+            link : '/'
+        },
+        {
+            name : 'Cчета',
+            link : '/'
+        },
+        {
+            name : 'Трансферы',
+            link : '/'
+        },
+        {
+            name : 'Инвестиции',
+            link : '/'
+        },
+        {
+            name : 'Другие услуги',
+            link : '/'
+        }
+    ],
+    [
+        {
+            name : 'Loans',
+            link : '/'
+        },
+        {
+            name : 'Deposits',
+            link : '/'
+        },
+        {
+            name : 'Cards',
+            link : '/'
+        },
+        {
+            name : 'Invoices',
+            link : '/'
+        },
+        {
+            name : 'Transfers',
+            link : '/'
+        },
+        {
+            name : 'Investments',
+            link : '/'
+        },
+        {
+            name : 'Other services:',
+            link : '/'
+        }
+    ],
+    
     ]
     export const bannerInfo = [
         {

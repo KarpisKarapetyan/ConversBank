@@ -5,6 +5,7 @@ import { BannerContent } from './bannerContent/BannerContent';
 import LinearDots from './LinearDots/LinerDots';
 
 export default function Banner(){
+  
     const SLIDER_SETTINGS = {
         autoplay: true,
         arrows: true,

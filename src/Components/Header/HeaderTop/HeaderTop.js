@@ -8,7 +8,6 @@ import BasicTabs from './Tabs/Tabs'
 import { useState } from 'react'
 import {  LANGUAGES , useTranslate } from '../../../contexts/LanguageProvider'
 import globe from '../../HomePage/ConversPoints/PointsSlider/img/globe.png'
-import ChangeLanguages from './Languages/languages'
 
 export default function  HeaderTop () {
     const [langOption, setLangOption] = useState(localStorage.getItem('languagesOption') || LANGUAGES[0])
@@ -29,8 +28,8 @@ export default function  HeaderTop () {
                <Search/>
                {/* <ChangeLanguages/> */}
                <label className='globeDiv'>
-               <img src={globe}/>
-                <select className='langSelect' value={langOption} onChange={handleChangeLang}>
+               <img style={{position : 'absolute'}} src={globe}/>
+                <select  value={langOption} onChange={handleChangeLang}>
                     <option value="AM">{t("armenian")}</option>
                     <option value="RU">{t("russian")}</option>
                     <option value="EN">{t("english")}</option>

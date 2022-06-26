@@ -40,7 +40,8 @@
 
 .globeDiv{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    position: relative;
     align-items: center;
     gap: 5px;
     cursor: pointer;
@@ -48,12 +49,22 @@
     height: 32px;
     background-color: #fff;
     border-radius: 10px;
+    padding: 0 5px;
 }
 
 .globeDiv select { 
+    width: 90%;
+    height: 100%;
     cursor: pointer;
     border: none;
     background: no-repeat;
     text-decoration: none;
     outline: none;
+    position : absolute ;
+    padding-left: 21px;
+
+}
+
+.globeDiv img {
+    position: absolute;
 }

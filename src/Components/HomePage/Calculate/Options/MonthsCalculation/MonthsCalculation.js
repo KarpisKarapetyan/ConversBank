@@ -5,10 +5,10 @@ import { setMonths } from '../../../../../Redux/slices/Months/Months';
 import { useConvertYear } from '../../../../../Hooks/useMonthsConvertYear';
 import { ClickAwayListener } from '@mui/material';
 import { useForm } from "react-hook-form";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function MonthsCalculation() {
-  const [value, setValue] = useState( sessionStorage.getItem('MonthsSum') || 10);
+  const [value, setValue] = useState( Number(sessionStorage.getItem('MonthsSum')) || 10);
   const dispatch = useDispatch()
   const monthsConvertYear = useConvertYear
   const [isOpenInput , setIsOpenInput] = useState(false)
@@ -50,9 +50,10 @@ export default function MonthsCalculation() {
   const handleClickAway = () => {
     setIsOpenInput(false);
   };
-
-  dispatch(setMonths(value))
-  sessionStorage.setItem('MonthsSum' , value)
+  useEffect(()=>{
+    dispatch(setMonths(value))
+    sessionStorage.setItem('MonthsSum' , value)
+  },[value])
 
   return (
     <ClickAwayListener onClickAway={handleClickAway}>

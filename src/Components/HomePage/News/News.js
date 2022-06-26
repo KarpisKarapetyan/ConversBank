@@ -47,7 +47,7 @@ export default function News () {
        {
         news.map((item, i )=>{
             return (
-                <div style={styleMain} key={item.i}>
+                <div style={styleMain} key={i}>
                     <div >
                         <span style={{display : 'block' , marginBottom : "29px"}}> {item.data}</span>
                         <span> {item.message} </span>

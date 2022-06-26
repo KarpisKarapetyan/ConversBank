@@ -2,8 +2,6 @@ import './Options.css'
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
 import AmountSum from './AmountSum/AmountSum';
 import MonthsCalculation from './MonthsCalculation/MonthsCalculation';
 import MonthlyPaid from './MonthlyPaid/MonthlyPaid';
@@ -24,9 +22,9 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
-        </Box>
+        <div style = {{ padding: '24px' }}>
+          <div className='calcDiv'>{children}</div>
+        </div>
       )}
     </div>
   );
@@ -38,7 +36,7 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-function a11yProps(index) {
+function forTabs(index) {
   return {
     id: `simple-tab-${index}`,
     'aria-controls': `simple-tabpanel-${index}`,
@@ -50,15 +48,15 @@ export default function Options() {
   const handleChange = (event, newValue) => setValue(newValue);
  
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box >
+    <div style={{ width: '100%' }}>
+      <div >
       <div className='titleCalc'> Հաշվիչ </div>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab className='option' label="Վարկ" {...a11yProps(0)} />
-          <Tab className='option' label="Ավանդ" {...a11yProps(1)} />
-          <Tab className='option' label="Պարտատոմսեր" {...a11yProps(2)} />
+          <Tab className='option' label="Վարկ" {...forTabs(0)} />
+          <Tab className='option' label="Ավանդ" {...forTabs(1)} />
+          <Tab className='option' label="Պարտատոմսեր" {...forTabs(2)} />
         </Tabs>
-      </Box>
+      </div>
       <TabPanel value={value} index={0}>
           <div className='calc_fields'>
           <AmountSum/>
@@ -80,7 +78,7 @@ export default function Options() {
       <TabPanel value={value} index={2}>
         Պարտատոմսեր
       </TabPanel>
-    </Box>
+    </div>
   );
 }
 
