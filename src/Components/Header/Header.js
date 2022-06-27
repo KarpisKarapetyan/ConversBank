@@ -2,9 +2,9 @@ import './Header.css'
 import HeaderMain from './HeaderMain/HeaderMain'
 import HeaderTop from './HeaderTop/HeaderTop'
 
-export const Header = () =>{
+export default function Header () {
     return (
-        <div className= "headerMain">
+        <div className= "header">
            <HeaderTop/>
            <HeaderMain/>
         </div>

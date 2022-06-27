@@ -2,10 +2,10 @@ import Slider from "@mui/material/Slider";
 import { useDispatch} from "react-redux";
 import { setDepositSum } from "../../../../../Redux/slices/DepositSum/DepositSum";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function DepositSum() {
-  const [value, setValue] = useState( sessionStorage.getItem('DepositSum') ||  750000);
+  const [value, setValue] = useState( Number(sessionStorage.getItem('DepositSum')) ||  750000);
   const dispatch = useDispatch()
   const [isOpenInput , setIsOpenInput] = useState(false)
   const {register,handleSubmit,formState: { errors }} = useForm();
@@ -17,7 +17,6 @@ export default function DepositSum() {
   const onSubmit = data => {
     const inputSum = +data.inputSum 
     if(inputSum >=50000 && inputSum <=2000000){
-      console.log(inputSum)
       setIsOpenInput(false)
       setValue(inputSum)
       dispatch(setDepositSum(value))
@@ -26,9 +25,11 @@ export default function DepositSum() {
        setIsOpenInput(false)
    }  
 };
+  useEffect(()=>{
+    dispatch(setDepositSum(value))
+    sessionStorage.setItem('DepositSum',value)
+  },[value])
   
-  dispatch(setDepositSum(value))
-  sessionStorage.setItem('DepositSum',value)
   return (
     <div style={{width : 300}}>      
         <div  >

@@ -11,14 +11,11 @@ export const HomePage = () =>{
     return (
         <div className='homePage'>
            <div className='navBanner'> <Banner/> </div>
-            
-            
             <div className="calcMain">
                 <div style={{display : "flex",gap : "20px",marginTop : '10px' }} >
                     <Calculate/>
                     <ConversPoints/>
-                </div>
-                
+                </div>    
             </div >
             <div className='caruselLinks' >
                 <Links />

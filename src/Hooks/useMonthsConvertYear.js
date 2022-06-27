@@ -1,5 +1,4 @@
 export const useConvertYear = (monthCount, scaledValue) => { 
-  
     function getPlural(number, word) {
         return number === 1 && word.one || word.other;
     }
@@ -8,9 +7,9 @@ export const useConvertYear = (monthCount, scaledValue) => {
         m = monthCount % 12,
         y = Math.floor(monthCount / 12),
         result = [];
-
     y && result.push(y + ' ' + getPlural(y, years));
     m && result.push(m + ' ' + getPlural(m, months));
     scaledValue = result.join(' ');
     return scaledValue
 } 
+

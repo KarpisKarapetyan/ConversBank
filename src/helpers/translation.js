@@ -1,4 +1,7 @@
+import { linksArr } from "./constants"
+
 export const AM = {
+    linksHeader : linksArr[0] ,
     "onlineBanking" : 'Օնլայն բանկինգ',
     armenian: "Հայ",
     russian : "Рус",
@@ -12,9 +15,11 @@ export const AM = {
     currency_Tab : 'Տարադրամ',
     gold : 'Ոսկի',
     individuals : 'Անհատներ',
-    business : "Բիզնես",    
+    business : "Բիզնես",
+    headerAction : 'Ակցիա'    
 }
 export const RU = {
+    linksHeader : linksArr[1] ,
     "onlineBanking" : 'Онлайн банкинг',
     armenian: "Հայ",
     russian : "Рус",
@@ -29,11 +34,13 @@ export const RU = {
     gold : 'Золото',
     individuals : 'Лица',
     business : "Бизнес",
+    headerAction : 'Акция'
 }
 export const EN = {
+    linksHeader : linksArr[2],
     "onlineBanking" : 'Online banking',
     armenian: "Հայ",
-    russian : "Rus",
+    russian : "Рус",
     english : "Eng",
     "$ exchange_Rate" : "Rate",
     "currency_and_gold_exchnage_rate": "Currency and gold exchnage rate",
@@ -45,6 +52,7 @@ export const EN = {
     gold : 'Gold',
     individuals : 'Individuals',
     business : "Business",
+    headerAction : 'Action'
 }
 
 const languages = {

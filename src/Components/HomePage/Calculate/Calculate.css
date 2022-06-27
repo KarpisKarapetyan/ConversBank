@@ -1,8 +1,8 @@
 .mainCalc{
     width: 793px;
     height: 409px;
-    left: 0px;
-    top: 0px;
+    /* left: 0px;
+    top: 0px; */
     display: flex;
     justify-content: space-between;
     background: #FFFFFF;
@@ -23,7 +23,7 @@
     color: #333333;
 }
 
-.MuiTypography-root {
+.calcDiv {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;

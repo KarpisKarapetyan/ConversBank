@@ -6,7 +6,6 @@ export const LANGUAGES = ["AM", "RU", "EN"];
 const LanguageContext = createContext(null);
 const LanguageProvider = ({children}) => {
     const [activeLanguage, setActiveLanguage] = useState(getLanguage(localStorage.getItem("language") || LANGUAGES[0]))
-
     const changeLanguage = useCallback( lang => {
     setActiveLanguage(getLanguage(lang))
     localStorage.setItem("language", lang.toString())

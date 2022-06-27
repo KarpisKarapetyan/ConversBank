@@ -22,6 +22,7 @@ export default function Footer () {
                     return (
                         <div className='footerLinks' key={i}>
                            <NavLink to={link.link}> <li> {link.title} </li> </NavLink> 
+                           
                         </div>
                     )
                  })}
