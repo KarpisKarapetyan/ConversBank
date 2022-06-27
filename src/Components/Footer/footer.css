@@ -1,9 +1,10 @@
 .footerCont{
     width: 100%;
-    height: 601px;
+    min-height: 601px;
     background-color: #006CA8;
     padding-top: 64px ;
 }
+
 .footerCont span { 
     color: #FFFFFF;
 }
@@ -15,18 +16,22 @@
     gap: 48px;
     margin-bottom: 34px;
 }
+
 .footerTop li{
     text-decoration: none;
 }
+
 .footerLinks{
     margin-bottom: 20px;
 }
+
 .footerMobileTitle{
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
 }
+
 .footerMobileTitle span { 
     font-family: 'Poppins';
     font-style: normal;
@@ -34,6 +39,7 @@
     font-size: 20px;
     line-height: 30px;
 }
+
 .footerMobileSpan { 
     font-family: 'Montserrat arm';
     font-style: normal;
@@ -41,9 +47,11 @@
     font-size: 12px;
     line-height: 15px;
 }
+
 .footerLinks a {
     text-decoration: none;
 }
+
 .footerLinks li {
     color: #FFFFFF;
     font-family: 'Montserrat arm';
@@ -52,6 +60,7 @@
     font-size: 13px;
     line-height: 20px;
 }
+
 .footerBottom span{ 
     display: flex;
     justify-content: center;
@@ -64,6 +73,7 @@
     line-height: 18px;
 
 }
+
 .footerPartners{
     width: 57%;
     display: flex;

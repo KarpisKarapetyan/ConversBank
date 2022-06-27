@@ -90,7 +90,7 @@ export const linksArr = [
             link : '/'
         },
         {
-            name : 'Other services:',
+            name : 'Other services',
             link : '/'
         }
     ],
@@ -198,4 +198,9 @@ export const linksArr = [
             title : 'ԿԲՀՏ/ Հաշվարկային տոկոսադրույք',
             link : '/'
         },
+    ]
+    export const linerDots = [
+        "Խնայիր տերմինալով վճարելիս ",
+        "Mobile Banking experienced in a new thrilling ways",
+        "Short Title example",
     ]

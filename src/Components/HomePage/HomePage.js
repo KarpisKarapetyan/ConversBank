@@ -12,7 +12,7 @@ export const HomePage = () =>{
         <div className='homePage'>
            <div className='navBanner'> <Banner/> </div>
             <div className="calcMain">
-                <div style={{display : "flex",gap : "20px",marginTop : '10px' }} >
+                <div style={{display : "flex",gap : "20px"}} >
                     <Calculate/>
                     <ConversPoints/>
                 </div>    

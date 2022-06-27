@@ -1,8 +1,7 @@
-import { bannerInfo } from '../../../helpers/constants';
+import { bannerInfo, linerDots } from '../../../helpers/constants';
 import SlickSlider from '../../slickSlider/slickSlider'
 import './Banner.css'
 import { BannerContent } from './bannerContent/BannerContent';
-import LinearDots from './LinearDots/LinerDots';
 
 export default function Banner(){
   
@@ -12,24 +11,15 @@ export default function Banner(){
         fade: false,
         autoplaySpeed: 5000,
         dots:  true,
-        customPaging: function(i) {
-            return (
-              <div className='dotsDiv'>
-                <LinearDots/>
-              </div>
-            );
-          },
-          appendDots: dots => (
-            <div>
-              <ul style={{ width : '100px'}}> {dots} </ul>
-            </div>
-          ),
+        customPaging: i => <div className='linerTilte'><span className='dotsDiv'> { linerDots[i] } </span></div> ,
+        appendDots: dots => <div>  {dots} </div>,
         lazyLoad: true,
         infinite: true,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 2,
+        pauseOnHover : false
     };
     return (
         <SlickSlider  settings={SLIDER_SETTINGS}>

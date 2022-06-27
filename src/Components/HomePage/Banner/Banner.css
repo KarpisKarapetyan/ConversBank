@@ -1,3 +1,7 @@
+.dotsDiv { 
+    width: 292px !important;
+}
+
 .navBanner .slick-slider.slick-initialized{
     width: 100%;
     min-height: 550px;
@@ -43,28 +47,32 @@
 }
 .navBanner img {
     width: 100%;
+    min-height: 540px;
 }
 .navBanner.slick-dots ul {
     list-style-type: none;
-    /* margin: 0 -10px; */
     padding: 0;
     display: flex;
-    align-items: center;
     justify-content: left;
     width: 100% !important;
 }
 
+
 .navBanner .slick-dots li {
-    width: 185px !important;
-    display: table-cell;
+    flex: 1;
     padding: 0 10px;
-    height: auto !important;
     margin: 0;
+    height: 100%;
+    max-width: 250px;
 } 
 
 .navBanner .slick-dots{
-    bottom: 5px;
-    left: 0px;
+    min-width: 1200px;
+    bottom: 20px;
+    left: 25%;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
 } 
 .css-eglki6-MuiLinearProgress-root { 
     width: 185px;
@@ -77,12 +85,38 @@
     width: auto !important;
 }
 .linerTilte{
-    width: 292px !important;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 292px;
     background-color: rgb(255, 255, 255);
     color:  #007DC3;;
     text-align: center;
     height: 66px;
     border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+.linerTilte:after {
+    display: block;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    background: #F78E1E;
+    width: 0;
+}
+
+.slick-active .linerTilte:after {
+    width: 100%;
+    transition:  5s linear;
 }
 
  .slick-arrow {

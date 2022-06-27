@@ -19,8 +19,8 @@ function MonthlyPaid (){
     let persentValue = 0
 
     if (isFinite(monthly) && 
-        (monthly != Number.POSITIVE_INFINITY) &&
-        (monthly != Number.NEGATIVE_INFINITY)) {
+        (monthly !== Number.POSITIVE_INFINITY) &&
+        (monthly !== Number.NEGATIVE_INFINITY)) {
         monthsPayment = Math.round(monthly);
         totalValue = Math.round(monthly * payments);
         persentValue = Math.round((monthly * payments) - principal);

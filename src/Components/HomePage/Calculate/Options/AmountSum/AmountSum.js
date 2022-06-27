@@ -34,10 +34,8 @@ export default function AmountSum() {
   useEffect(()=>{
     dispatch(setSum(value))
     sessionStorage.setItem('AmountSum', value)
-  },[ value])
+  },[value])
   
-  
-
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
       <div style={{width : 300}}>
