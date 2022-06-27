@@ -15,9 +15,9 @@ export default function AmountSum() {
   const handleChange = (event, newValue) =>  setValue(newValue);
   const simbolDram = symbolRate[0]
 
-  const openInput= () => setIsOpenInput(true)
-  const valueLabelFormat = (value)=> `${value}  ${simbolDram}`;
-  const sum = (value)=> value;
+  const openInput = () => setIsOpenInput(true)
+  const valueLabelFormat = (value) => `${value}  ${simbolDram}`;
+  const sum = (value) => value;
   const handleClickAway = () => setIsOpenInput(false);
   const onSubmit = data => {
     const inputSum = +data.inputSum 
