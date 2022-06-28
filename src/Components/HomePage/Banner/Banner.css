@@ -60,10 +60,9 @@
 
 .navBanner .slick-dots li {
     flex: 1;
-    padding: 0 10px;
     margin: 0;
     height: 100%;
-    max-width: 250px;
+    width: 292px;
 } 
 
 .navBanner .slick-dots{
@@ -72,7 +71,6 @@
     left: 10%;
     display: flex;
     align-items: flex-start;
-    gap: 60px;
 } 
 .css-eglki6-MuiLinearProgress-root { 
     width: 185px;
@@ -95,7 +93,6 @@
     align-items: center;
     justify-content: center;
     height: 60px;
-    padding: 10px 20px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;

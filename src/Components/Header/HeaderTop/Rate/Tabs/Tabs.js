@@ -2,12 +2,10 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { useTranslate } from '../../../../../contexts/LanguageProvider';
@@ -39,9 +37,9 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box>
-          <Typography>{children}</Typography>
-        </Box>
+        <div>
+          <div>{children}</div>
+        </div>
       )}
     </div>
   );
@@ -77,7 +75,7 @@ export default function BasicTabs() {
       </Box>
       <TabPanel value={value} index={0}>
 
-      <TableContainer  >
+      <div  >
       <Table sx={{ minWidth: 300 }} >
         <TableHead>
           <TableRow>
@@ -90,7 +88,7 @@ export default function BasicTabs() {
           {rateData.map((row , i) => (
             <TableRow
               key={row.name}
-              className= {   i % 2 === 0 && 'greyBack'     }
+              className= { i % 2 === 0 ?  'greyBack' : '' }
             >
               <TableCell component="th" scope="row">
                 {row.name}
@@ -101,7 +99,7 @@ export default function BasicTabs() {
           ))}
         </TableBody>
       </Table>
-    </TableContainer>
+    </div>
 
       </TabPanel>
       <TabPanel value={value} index={1}>
