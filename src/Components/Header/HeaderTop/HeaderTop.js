@@ -33,7 +33,9 @@ export default function  HeaderTop () {
                {/* <ChangeLanguages/> */}
                <label className='globeDiv' style={{backgroundColor : !changeMainTabValue ? '#fff' : '#2D3940'}}>
                <img style={{position : 'absolute'}} src={!changeMainTabValue ? globe : businessGlobe}/>
-                <select  value={langOption} onChange={handleChangeLang}>
+                <select  value={langOption} onChange={handleChangeLang}
+                    style={{ color : changeMainTabValue && '#fff', backgroundColor : changeMainTabValue &&  "#2D3940" }}                 
+                >
                     <option value="AM">{t("armenian")}</option>
                     <option value="RU">{t("russian")}</option>
                     <option value="EN">{t("english")}</option>
