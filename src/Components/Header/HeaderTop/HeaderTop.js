@@ -8,6 +8,7 @@ import MainTabs from './Tabs/Tabs'
 import { useState } from 'react'
 import {  LANGUAGES , useTranslate } from '../../../contexts/LanguageProvider'
 import globe from '../../HomePage/ConversPoints/PointsSlider/img/globe.png'
+import businessGlobe from '../../HomePage/ConversPoints/PointsSlider/img/businessGlobe.png'
 import { useSelector } from 'react-redux'
 import { mainTabsSelector } from '../../../Redux/slices/mainTabs/mainTabs'
 
@@ -30,8 +31,8 @@ export default function  HeaderTop () {
                <Location/>
                <Search/>
                {/* <ChangeLanguages/> */}
-               <label className='globeDiv'>
-               <img style={{position : 'absolute'}} src={globe}/>
+               <label className='globeDiv' style={{backgroundColor : !changeMainTabValue ? '#fff' : '#2D3940'}}>
+               <img style={{position : 'absolute'}} src={!changeMainTabValue ? globe : businessGlobe}/>
                 <select  value={langOption} onChange={handleChangeLang}>
                     <option value="AM">{t("armenian")}</option>
                     <option value="RU">{t("russian")}</option>

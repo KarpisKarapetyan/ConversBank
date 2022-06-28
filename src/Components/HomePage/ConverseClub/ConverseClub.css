@@ -19,6 +19,7 @@
     background: #F78E1E;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+    border: none;
 }
 .clubTitle {
     display: block;

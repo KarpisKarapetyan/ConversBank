@@ -45,20 +45,19 @@ export default function MainTabs() {
 
   const [value, setValue] = useState(0);
   const {t} = useTranslate();
-  const changeValue = useSelector(mainTabsSelector)
+  const changeMainTabValue = useSelector(mainTabsSelector)
   const dispatch = useDispatch()
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   
   return (
-    <Box >
-      <Box sx={{  borderColor: 'divider' }}>
+      <div className={changeMainTabValue && "businessMainTab" }>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label= { t('individuals') } {...tabsArr(0)} onClick = {()=> dispatch(setMainTabs(false))} />
           <Tab label= { t('business') } {...tabsArr(1)} onClick = {()=> dispatch(setMainTabs(true))}/>
         </Tabs>
-      </Box>
-    </Box>
+      </div>
+   
   );
 }

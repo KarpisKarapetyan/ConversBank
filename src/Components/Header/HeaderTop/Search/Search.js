@@ -1,19 +1,21 @@
 import './Search.css'
 import search from '../../../HomePage/ConversPoints/PointsSlider/img/search.png'
+import businessSearch from '../../../HomePage/ConversPoints/PointsSlider/img/businessSearch.png'
 import { useForm } from 'react-hook-form'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { searchThunk } from '../../../../Redux/thunks/searchThunk'
 import { useState } from 'react'
 import axios from 'axios'
 import { mainUrl } from '../../../../Api/Api'
 import ClickAwayListener from '@mui/material/ClickAwayListener';
+import { mainTabsSelector } from '../../../../Redux/slices/mainTabs/mainTabs'
 
 export default function  Search () {
     const [ showInput , setShowInput] = useState(false)
     const dispatch = useDispatch()
     const { register,handleSubmit,formState: {errors}, } = useForm({ mode: 'onChange'})
     const [ placeholderValue ,setPlaceholderValue ] = useState("search")
-
+    const changeTabValue = useSelector(mainTabsSelector)
     const onSubmit = (data) => {
     const {search}  = data
     
@@ -58,12 +60,10 @@ export default function  Search () {
                  <span>{errors?.search?.message || "Error!"}</span>  </div>}
         </div>
       </ClickAwayListener>
-
-        }
+  }
         <div onClick={() => { setShowInput(!showInput) }} className='location'>
-            <img src={search}/>
+           <img src={ changeTabValue ? businessSearch : search }/>
         </div>
-
     </>
   )
 }
