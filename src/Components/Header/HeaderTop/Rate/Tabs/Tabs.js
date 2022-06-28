@@ -1,4 +1,3 @@
-import * as React from 'react';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -9,6 +8,7 @@ import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { useTranslate } from '../../../../../contexts/LanguageProvider';
+import { useState } from 'react';
 
 function createData(name, take, sale) {
   return { name, take, sale};
@@ -58,8 +58,8 @@ function a11yProps(index) {
   };
 }
 
-export default function BasicTabs() {
-  const [value, setValue] = React.useState(0);
+export default function ChangeGoldTab() {
+  const [value, setValue] = useState(0);
   const {t} = useTranslate();
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -87,7 +87,7 @@ export default function BasicTabs() {
         <TableBody>
           {rateData.map((row , i) => (
             <TableRow
-              key={row.name}
+              key={i}
               className= { i % 2 === 0 ?  'greyBack' : '' }
             >
               <TableCell component="th" scope="row">

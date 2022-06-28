@@ -10,8 +10,16 @@
     align-items: center;
     width: 100%;
     height: 59px;
-    background-color: #F2F2F2;
+    /* background-color: #F2F2F2; */
 }
+/* .HeaderTopBusiness{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 59px;
+    background-color: #21303A;
+} */
 
 .HeaderTopSpan {
     display: flex;
@@ -22,7 +30,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    color: #666666;
+    /* color: #666666; */
     opacity: 0.8;
 }
 

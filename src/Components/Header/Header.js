@@ -5,7 +5,7 @@ import HeaderTop from './HeaderTop/HeaderTop'
 export default function Header () {
     return (
         <div className= "header">
-           <HeaderTop/>
+           {/* <HeaderTop/> */}
            <HeaderMain/>
         </div>
     )

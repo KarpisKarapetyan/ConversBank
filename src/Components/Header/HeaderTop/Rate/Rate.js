@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import './Rate.css'
-import BasicTabs from './Tabs/Tabs';
+import ChangeGoldTab from './Tabs/Tabs';
 import dayjs from "dayjs"
 import { useState } from 'react';
 import { useTranslate } from '../../../../contexts/LanguageProvider';
@@ -22,7 +22,7 @@ export default function Rate() {
         {open ? (
           <Box className='exchangeBox'>
             <span >{ t("currency_and_gold_exchnage_rate")}</span>
-            <div style={{margin : '20px 0'}}> <BasicTabs/> </div>
+            <div style={{margin : '20px 0'}}> <ChangeGoldTab/> </div>
              <span className='exchangeUpdate'> { t('updated') } { formattedDate }   </span> 
           </Box>
         ) : null}

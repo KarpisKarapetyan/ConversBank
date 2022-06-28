@@ -1,12 +1,11 @@
 .footerCont{
     width: 100%;
     min-height: 601px;
-    background-color: #006CA8;
     padding-top: 64px ;
 }
 
 .footerCont span { 
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .footerTop{

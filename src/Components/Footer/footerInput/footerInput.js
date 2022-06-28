@@ -6,7 +6,7 @@ import twitterIcon from '../../../Components/HomePage/ConversPoints/PointsSlider
 import VKIcon from '../../../Components/HomePage/ConversPoints/PointsSlider/img/VK.png'
 import instaIcon from '../../../Components/HomePage/ConversPoints/PointsSlider/img/Insta.png'
 import youtubeIcon from '../../../Components/HomePage/ConversPoints/PointsSlider/img/YouTube.png'
-import LinkedinIcon from '../../../Components/HomePage/ConversPoints/PointsSlider/img/FB.png'
+import LinkedinIcon from '../../../Components/HomePage/ConversPoints/PointsSlider/img/LinkedIn.png'
 import { NavLink } from 'react-router-dom';
 
 export default function FooterInput () { 

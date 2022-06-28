@@ -9,13 +9,16 @@ import abcFinanceIcon from '../HomePage/ConversPoints/PointsSlider/img/abcFinanc
 import cbaIcon from '../HomePage/ConversPoints/PointsSlider/img/CBA.png'
 import finInfoIcon from '../HomePage/ConversPoints/PointsSlider/img/finInfo.png'
 import financialIcon from '../HomePage/ConversPoints/PointsSlider/img/financial.png'
+import { useSelector } from 'react-redux'
+import { mainTabsSelector } from '../../Redux/slices/mainTabs/mainTabs'
 
 export default function Footer () { 
     const footerLinks1 = footerLinks.slice(0 , 7)
     const footerLinks2 = footerLinks.slice(7, 14)
     const footerLinks3 = footerLinks.slice(14)
+    const changeMainTabValue = useSelector(mainTabsSelector)
     return (
-        <div className='footerCont'>
+        <div  className = 'footerCont' style={{backgroundColor : !changeMainTabValue ? '#006CA8' : '#1A1A1A'}}>
             <div className="footerTop">
                 <div> 
                 {footerLinks1.map(( link , i )=>{
