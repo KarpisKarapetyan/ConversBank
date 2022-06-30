@@ -66,6 +66,7 @@
 
 .globeDiv img {
     position: absolute;
+    z-index: 1;
 }
 
 .businessMainTab button{

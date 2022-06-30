@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap'); */
 .HeaderMain{
     display: flex;
     justify-content: space-around;
@@ -7,24 +8,97 @@
     margin: 0 auto;
     background-color: #FFFFFF;
 }
-.HeaderMain button {
+.HeaderMain_Action_Button {
     border: none;
     text-align: center;
     text-decoration: none;
     width: 74px;
     height: 34px;
     background: #E5F2F9;
-    border-radius: 10px;
     color: #007DC3;
-    cursor: pointer;}
-
-
-li{
-    list-style: none;
-    color: #333333;
+    cursor: pointer;
+    border-radius: 10px;
 }
-.headerLinks{
-    text-decoration: none;
-    color: #333333;
+
+.dropdownUl li{
+    list-style: none;
+    display: block; 
+    justify-content: space-between; 
     
 }
+
+.dropdown { 
+    display: inline-block; 
+    gap: 10px;
+  } 
+  .dropbutton { 
+    background: none; 
+    border: none; 
+    text-decoration: none;
+    color: #333333;
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    transition: 0.2s; 
+  } 
+
+  .dropbuttonchild { 
+    display: block;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;;
+    position: absolute; 
+    max-width: 576px;
+    max-height: 239px;
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+  } 
+  .active { 
+    color: #000; 
+    background-color: #fff; 
+    transition: all 0.3s; 
+    transition-delay: 0.5s
+  } 
+  .dropbuttonchild ul { 
+    column-count: 2;
+    padding: 0;
+    
+  }
+  .dropbuttonchild ul li {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding: 13px 20px;
+
+  }
+   
+  .dropdown:hover .dropbuttonchild { 
+    height: auto;
+    opacity: 1;
+    transition: all 0.2s; 
+    transition-delay: 0.5s
+  } 
+   
+  .dropdown:hover .dropbutton { 
+    background-color: white; 
+    color: black; 
+    /* font-weight: bold;  */
+    cursor: pointer; 
+  } 
+   
+  .dropbuttonchild_navLink_Child { 
+    color: #000; 
+    text-decoration: none; 
+    font-size: 12px;
+    letter-spacing: 1px; 
+  } 
+   
+  .dropbuttonchild_navLink_Child:hover { 
+    background-color: white; 
+    cursor: pointer; 
+  } 
+  

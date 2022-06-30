@@ -21,6 +21,7 @@ export default function  HeaderTop () {
         localStorage.setItem('languagesOption' , event.target.value.toString())
         changeLanguage(event.target.value);
     }
+    
     return (
         <div className = "HeaderTop" style={{backgroundColor : !changeMainTabValue ? '#F2F2F2' : '#21303A'}} >
             <MainTabs/>

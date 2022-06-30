@@ -6,6 +6,7 @@ import DepositSumSlice from './slices/DepositSum/DepositSum'
 import DepositMonthsSlice from './slices/DepositMonths/DepositMonths'
 import searchSlice from "./slices/searchSlice/searchSlice";
 import mainTabsSlice from './slices/mainTabs/mainTabs'
+import languageSlice from "./slices/language/language"
 
 export const rootReducer = combineReducers({
     testArr : testArrSlice,
@@ -14,5 +15,6 @@ export const rootReducer = combineReducers({
     DepositSum : DepositSumSlice,
     DepositMonths : DepositMonthsSlice, 
     searchArr: searchSlice,
-    mainTabs : mainTabsSlice
+    mainTabs : mainTabsSlice,
+    language: languageSlice
 })

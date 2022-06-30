@@ -12,7 +12,14 @@ const MAIN_ROUTES = [
     },
     {
         path: "homePage",
-        element: <HomePage/>
+        element: <HomePage/>,
+        // children : [
+        //     {
+        //         path : ":id",
+        //         element : <HomePage/>,
+        //     }
+        // ]
+        
     }
 
 ]

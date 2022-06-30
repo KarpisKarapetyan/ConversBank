@@ -1,7 +1,8 @@
 import { linksArr } from "./constants"
 
 export const AM = {
-    linksHeader : linksArr[0] ,
+    linksHeaderTitles : linksArr.headerManuTitls[0] ,
+    HeaderManuChildLinks : linksArr.headerManuChildDrops[0],
     "onlineBanking" : 'Օնլայն բանկինգ',
     armenian: "Հայ",
     russian : "Рус",
@@ -19,7 +20,8 @@ export const AM = {
     headerAction : 'Ակցիա'    
 }
 export const RU = {
-    linksHeader : linksArr[1] ,
+    linksHeaderTitles : linksArr.headerManuTitls[1] ,
+    HeaderManuChildLinks : linksArr.headerManuChildDrops[1],
     "onlineBanking" : 'Онлайн банкинг',
     armenian: "Հայ",
     russian : "Рус",
@@ -37,7 +39,8 @@ export const RU = {
     headerAction : 'Акция'
 }
 export const EN = {
-    linksHeader : linksArr[2],
+    linksHeaderTitles : linksArr.headerManuTitls[2],
+    HeaderManuChildLinks : linksArr.headerManuChildDrops[2],
     "onlineBanking" : 'Online banking',
     armenian: "Հայ",
     russian : "Рус",

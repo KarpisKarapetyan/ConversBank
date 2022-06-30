@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import { useTranslate } from '../../../../contexts/LanguageProvider';
 import { useDispatch, useSelector } from 'react-redux';
 import { mainTabsSelector, setMainTabs } from '../../../../Redux/slices/mainTabs/mainTabs';
@@ -52,12 +51,11 @@ export default function MainTabs() {
   };
   
   return (
-      <div className={changeMainTabValue && "businessMainTab" }>
+      <div className={!changeMainTabValue ? '' : "businessMainTab" }>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab label= { t('individuals') } {...tabsArr(0)} onClick = {()=> dispatch(setMainTabs(false))} />
           <Tab label= { t('business') } {...tabsArr(1)} onClick = {()=> dispatch(setMainTabs(true))}/>
         </Tabs>
       </div>
-   
   );
 }
