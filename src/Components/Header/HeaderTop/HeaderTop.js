@@ -5,29 +5,33 @@ import Location from './Location/Location'
 import Rate from './Rate/Rate'
 import Search from './Search/Search'
 import MainTabs from './Tabs/Tabs'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import {  LANGUAGES , useTranslate } from '../../../contexts/LanguageProvider'
 import globe from '../../HomePage/ConversPoints/PointsSlider/img/globe.png'
 import businessGlobe from '../../HomePage/ConversPoints/PointsSlider/img/businessGlobe.png'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { mainTabsSelector } from '../../../Redux/slices/mainTabs/mainTabs'
+import {setLanguage} from '../../../Redux/slices/language/language'
 import ChangeLanguages from './Languages/languages'
 
 export default function  HeaderTop () {
     const [langOption, setLangOption] = useState(localStorage.getItem('languagesOption') || LANGUAGES[0])
     const {t, changeLanguage} = useTranslate();
     const changeMainTabValue = useSelector(mainTabsSelector)
+    const dispatch = useDispatch()
     const handleChangeLang = event => {
         setLangOption(event.target.value);
         localStorage.setItem('languagesOption' , event.target.value.toString())
         changeLanguage(event.target.value);
     }
-    
+    useEffect(()=> {
+        dispatch(setLanguage(langOption))
+    },[langOption])
     return (
         <div className = "HeaderTop" style={{backgroundColor : !changeMainTabValue ? '#F2F2F2' : '#21303A'}} >
             <MainTabs/>
             <div style={{display : "flex" , gap : '15px'}} >
-                <div className='HeaderTopSpan' style={{color : !changeMainTabValue ? '#666666' : '#fff'}}>   +374 10 511 211 </div>  
+               <div className='HeaderTopSpan' style={{color : !changeMainTabValue ? '#666666' : '#fff'}}>   +374 10 511 211 </div>  
                <NavLink to='/'>  <button className='btnBanking'> {t("onlineBanking")} </button></NavLink>
                <Rate/>
                <Location/>

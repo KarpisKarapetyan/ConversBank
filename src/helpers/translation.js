@@ -17,7 +17,8 @@ export const AM = {
     gold : 'Ոսկի',
     individuals : 'Անհատներ',
     business : "Բիզնես",
-    headerAction : 'Ակցիա'    
+    headerAction : 'Ակցիա',
+    search : "Որոնել",    
 }
 export const RU = {
     linksHeaderTitles : linksArr.headerManuTitls[1] ,
@@ -36,7 +37,8 @@ export const RU = {
     gold : 'Золото',
     individuals : 'Лица',
     business : "Бизнес",
-    headerAction : 'Акция'
+    headerAction : 'Акция',
+    search : "Поиск",
 }
 export const EN = {
     linksHeaderTitles : linksArr.headerManuTitls[2],
@@ -55,7 +57,8 @@ export const EN = {
     gold : 'Gold',
     individuals : 'Individuals',
     business : "Business",
-    headerAction : 'Action'
+    headerAction : 'Action',
+    search : "Search",
 }
 
 const languages = {

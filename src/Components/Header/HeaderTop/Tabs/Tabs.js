@@ -18,7 +18,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <div style={{ padding : '24px' }}>
-          <div>{children}</div>
+          <div>{ children }</div>
         </div>
       )}
     </div>

@@ -4,24 +4,26 @@ import businessSearch from '../../../HomePage/ConversPoints/PointsSlider/img/bus
 import { useForm } from 'react-hook-form'
 import { useDispatch, useSelector } from 'react-redux'
 import { searchThunk } from '../../../../Redux/thunks/searchThunk'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import axios from 'axios'
 import { mainUrl } from '../../../../Api/Api'
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import { mainTabsSelector } from '../../../../Redux/slices/mainTabs/mainTabs'
+import { useTranslate } from '../../../../contexts/LanguageProvider'
 
 export default function  Search () {
+  const {t} = useTranslate()
     const [ showInput , setShowInput] = useState(false)
     const dispatch = useDispatch()
     const { register,handleSubmit,formState: {errors}, } = useForm({ mode: 'onChange'})
-    const [ placeholderValue ,setPlaceholderValue ] = useState("search")
+    const [ placeholderValue ,setPlaceholderValue ] = useState(t("search"))
     const changeTabValue = useSelector(mainTabsSelector)
     const onSubmit = (data) => {
     const {search}  = data
     
       if(search.trim()){
         axios.get(`${mainUrl}/users`)
-      .then((res) => {
+       .then((res) => {
         const currentArr = res.data.filter(item =>   item.name === search || item.age === search || item.profession === search )
         console.log('currentArr-->' , currentArr)
         // navigate("../searchResualt")  
@@ -30,10 +32,8 @@ export default function  Search () {
       }
       return
   }  
-
-  const handleClickAway = () => {
-    setShowInput(false);
-  };
+  const handleClickAway = () => setShowInput(false);
+  useEffect(()=> setPlaceholderValue(t("search")),[showInput])
 
     return (
     <>
