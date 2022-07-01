@@ -8,8 +8,6 @@ import { mainTabsSelector, setMainTabs } from '../../../../Redux/slices/mainTabs
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
- 
- 
   return (
     <div
       role="tabpanel"
@@ -46,10 +44,8 @@ export default function MainTabs() {
   const {t} = useTranslate();
   const changeMainTabValue = useSelector(mainTabsSelector)
   const dispatch = useDispatch()
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-  
+  const handleChange = (event, newValue) => setValue(newValue);
+ 
   return (
       <div className={!changeMainTabValue ? '' : "businessMainTab" }>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">

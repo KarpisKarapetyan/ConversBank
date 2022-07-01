@@ -11,6 +11,7 @@ import globe from '../../HomePage/ConversPoints/PointsSlider/img/globe.png'
 import businessGlobe from '../../HomePage/ConversPoints/PointsSlider/img/businessGlobe.png'
 import { useSelector } from 'react-redux'
 import { mainTabsSelector } from '../../../Redux/slices/mainTabs/mainTabs'
+import ChangeLanguages from './Languages/languages'
 
 export default function  HeaderTop () {
     const [langOption, setLangOption] = useState(localStorage.getItem('languagesOption') || LANGUAGES[0])
@@ -35,7 +36,7 @@ export default function  HeaderTop () {
                <label className='globeDiv' style={{backgroundColor : !changeMainTabValue ? '#fff' : '#2D3940'}}>
                <img style={{position : 'absolute'}} src={!changeMainTabValue ? globe : businessGlobe}/>
                 <select  value={langOption} onChange={handleChangeLang}
-                    style={{ color : changeMainTabValue && '#fff', backgroundColor : changeMainTabValue &&  "#2D3940" }}                 
+                         style={{ color : changeMainTabValue && '#fff', backgroundColor : changeMainTabValue &&  "#2D3940" }}                 
                 >
                     <option value="AM">{t("armenian")}</option>
                     <option value="RU">{t("russian")}</option>
