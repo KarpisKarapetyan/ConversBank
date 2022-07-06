@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom'
 import './HeaderTop.css'
-// import ChangeLanguages from './Languages/languages'
 import Location from './Location/Location'
 import Rate from './Rate/Rate'
 import Search from './Search/Search'
@@ -12,7 +11,6 @@ import businessGlobe from '../../HomePage/ConversPoints/PointsSlider/img/busines
 import { useDispatch, useSelector } from 'react-redux'
 import { mainTabsSelector } from '../../../Redux/slices/mainTabs/mainTabs'
 import {setLanguage} from '../../../Redux/slices/language/language'
-import ChangeLanguages from './Languages/languages'
 
 export default function  HeaderTop () {
     const [langOption, setLangOption] = useState(localStorage.getItem('languagesOption') || LANGUAGES[0])
@@ -36,7 +34,6 @@ export default function  HeaderTop () {
                <Rate/>
                <Location/>
                <Search/>
-               {/* <ChangeLanguages/> */}
                <label className='globeDiv' style={{backgroundColor : !changeMainTabValue ? '#fff' : '#2D3940'}}>
                <img style={{position : 'absolute'}} src={!changeMainTabValue ? globe : businessGlobe}/>
                 <select  value={langOption} onChange={handleChangeLang}
