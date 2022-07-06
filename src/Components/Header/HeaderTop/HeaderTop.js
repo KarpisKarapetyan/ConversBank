@@ -26,7 +26,7 @@ export default function  HeaderTop () {
     }
     useEffect(()=> {
         dispatch(setLanguage(langOption))
-    },[langOption])
+    },[dispatch ,langOption])
     return (
         <div className = "HeaderTop" style={{backgroundColor : !changeMainTabValue ? '#F2F2F2' : '#21303A'}} >
             <MainTabs/>

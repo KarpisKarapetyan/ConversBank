@@ -33,7 +33,7 @@ export default function  Search () {
       return
   }  
   const handleClickAway = () => setShowInput(false);
-  useEffect(()=> setPlaceholderValue(t("search")),[showInput])
+  useEffect(()=> setPlaceholderValue( prev => prev !== t("search") ? t("search") : prev),[showInput])
 
     return (
     <>
