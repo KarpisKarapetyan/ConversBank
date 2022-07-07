@@ -3,24 +3,30 @@ import BusinessHome from '../Components/HomePage/BusinessHome/BusinessHome'
 import {HomePage} from '../Components/HomePage/HomePage'
 import LoanDetails from '../Components/LoanDetails/LoanDetails'
 
-
 const MAIN_ROUTES = [
    
     {
         path: "loanDetails",
-        element: <LoanDetails/>
+        element: <LoanDetails/>,
+        children : [
+            {
+                path : ":id",
+                element : <LoanDetails/>,
+            }
+        ]
     },
     {
-        path: "homePage",
+        path: "/homePage",
         element: <HomePage/>,
-        // children : [
-        //     {
-        //         path : ":id",
-        //         element : <HomePage/>,
-        //     }
-        // ]
+        children : [
+            {
+                path : ":id",
+                element : <HomePage/>,
+            }
+        ]
         
     }
+    
 
 ]
 const businessROUTES = [

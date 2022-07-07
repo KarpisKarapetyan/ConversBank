@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { LANGUAGES } from "../../../contexts/LanguageProvider";
 
 const initialState = {
-    language: LANGUAGES[0]
+    language: localStorage.getItem('language') || LANGUAGES[0]
 }
 
 const languageSlice = createSlice({
@@ -11,7 +11,6 @@ const languageSlice = createSlice({
     reducers: {
         setLanguage: (state, {payload}) => {
             state.language = payload 
-            
         }
     }
 })

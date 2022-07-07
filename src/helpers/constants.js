@@ -524,7 +524,8 @@ export const linksArr = {
             ] 
 } 
     export const bannerInfo = [
-        {
+        [
+            {
             title : `Անվճար քարտ նոր և \n գործող ավանդների \n համար`,
             message : 'Եթե ունես գործող ավանդ կամ ուզում ես նորը ներդնել, ապա \n այս առաջարկը հենց քեզ համար է',
             img : banner1,
@@ -542,7 +543,47 @@ export const linksArr = {
             img : banner3,
             link : '/'
         },
-
+    ],
+        [
+            {
+                title : `фывтфводф \n ырвфлорл  \n фывтфлвтдф`,
+                message : 'влыфовдфылорвфывол офыов лдфо лдво флдов длфолд ',
+                img : banner1,
+                link : '/'
+            },
+            {
+                title : 'фывдлф',
+                message : 'зфщышвол',
+                img : banner2,
+                link : '/'
+            },
+            {
+                title : 'цйуукрвтчь',
+                message : 'фщывлфщо',
+                img : banner3,
+                link : '/'
+            },
+        ],
+        [
+            {
+                title : `skadhfla`,
+                message : 'poiajsdoaijakskkdklas  kh kahskd kjad jk \n sdhfkka sajdl a d',
+                img : banner1,
+                link : '/'
+            },
+            {
+                title : 'ajsdhkl ',
+                message : 'ajd asdn,',
+                img : banner2,
+                link : '/'
+            },
+            {
+                title : 'ajdbm ,d',
+                message : 'akjsdm. add,a n',
+                img : banner3,
+                link : '/'
+            },
+        ]
     ]
     export const footerLinks = [
         {

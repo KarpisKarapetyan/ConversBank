@@ -1,9 +1,11 @@
-import { bannerInfo, linerDots } from '../../../helpers/constants';
+import { useTranslate } from '../../../contexts/LanguageProvider';
+import { linerDots } from '../../../helpers/constants';
 import SlickSlider from '../../slickSlider/slickSlider'
 import './Banner.css'
 import { BannerContent } from './bannerContent/BannerContent';
 
 export default function Banner(){
+    const {t} = useTranslate()
   
     const SLIDER_SETTINGS = {
         autoplay: true,
@@ -23,7 +25,7 @@ export default function Banner(){
     };
     return (
         <SlickSlider  settings={SLIDER_SETTINGS}>
-                {bannerInfo?.map((item , i)=>(
+                {t('bannerInfo')?.map((item , i)=>(
                  <div key={i}>
                                 <img src={item.img}></img>
                                 <BannerContent item={item}/>

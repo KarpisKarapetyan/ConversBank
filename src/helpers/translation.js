@@ -1,6 +1,7 @@
-import { linksArr } from "./constants"
+import { bannerInfo, linksArr } from "./constants"
 
 export const AM = {
+    bannerInfo : bannerInfo[0],
     linksHeaderTitles : linksArr.headerManuTitls[0] ,
     HeaderManuChildLinks : linksArr.headerManuChildDrops[0],
     "onlineBanking" : 'Օնլայն բանկինգ',
@@ -20,6 +21,7 @@ export const AM = {
     headerAction : 'Ակցիա'    
 }
 export const RU = {
+    bannerInfo : bannerInfo[1],
     linksHeaderTitles : linksArr.headerManuTitls[1] ,
     HeaderManuChildLinks : linksArr.headerManuChildDrops[1],
     "onlineBanking" : 'Онлайн банкинг',
@@ -39,6 +41,7 @@ export const RU = {
     headerAction : 'Акция'
 }
 export const EN = {
+    bannerInfo : bannerInfo[2],
     linksHeaderTitles : linksArr.headerManuTitls[2],
     HeaderManuChildLinks : linksArr.headerManuChildDrops[2],
     "onlineBanking" : 'Online banking',
