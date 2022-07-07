@@ -8,17 +8,23 @@ const MAIN_ROUTES = [
    
     {
         path: "loanDetails",
-        element: <LoanDetails/>
+        element: <LoanDetails/>,
+        children : [
+            {
+                path : ":id",
+                element : <LoanDetails/>,
+            }
+        ]
     },
     {
         path: "homePage",
         element: <HomePage/>,
-        // children : [
-        //     {
-        //         path : ":id",
-        //         element : <HomePage/>,
-        //     }
-        // ]
+        children : [
+            {
+                path : ":id",
+                element : <HomePage/>,
+            }
+        ]
         
     }
 

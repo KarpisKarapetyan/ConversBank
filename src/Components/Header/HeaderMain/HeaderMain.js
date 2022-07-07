@@ -1,7 +1,10 @@
 import './HeaderMain.css'
 import mainLogo from '../../HomePage/ConversPoints/PointsSlider/img/mainLogo.png'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate, useParams } from 'react-router-dom'
 import { useTranslate } from '../../../contexts/LanguageProvider'
+import { useSelector } from 'react-redux'
+import { languageSelector } from '../../../Redux/slices/language/language'
+import { useEffect } from 'react'
 
 export const CreateDropdown = ({linksArr}) => {
     const {t} = useTranslate()
@@ -28,9 +31,16 @@ export const CreateDropdown = ({linksArr}) => {
 
 export default function  HeaderMain () {
     const {t} = useTranslate()
+    const navigate = useNavigate()
+    const currentLang = useSelector(languageSelector).toLowerCase()
+    const params = useParams()
+
+    useEffect(()=>{
+        params.id = currentLang
+    },[currentLang, params])
     return (
         <div className='HeaderMain'>
-              <NavLink to='./HomePage'> <img src={mainLogo} /></NavLink>  
+              <img style={{cursor : "pointer"}} onClick= {()=> navigate(`../homePage/${params.id}`)} src={mainLogo} />
               <CreateDropdown linksArr = {t('linksHeaderTitles')}/>  
                 {/* {t('linksHeaderTitles').map((link, i ) =>(
                     <div key={i} className="dropdown"> 
