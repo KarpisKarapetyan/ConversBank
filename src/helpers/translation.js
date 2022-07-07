@@ -1,6 +1,7 @@
-import { linksArr } from "./constants"
+import { linksArr , bannerInfo } from "./constants"
 
 export const AM = {
+    bannerInfo : bannerInfo[0],
     linksHeaderTitles : linksArr.headerManuTitls[0] ,
     HeaderManuChildLinks : linksArr.headerManuChildDrops[0],
     "onlineBanking" : 'Օնլայն բանկինգ',
@@ -21,6 +22,7 @@ export const AM = {
     search : "Որոնել",    
 }
 export const RU = {
+    bannerInfo : bannerInfo[1],
     linksHeaderTitles : linksArr.headerManuTitls[1] ,
     HeaderManuChildLinks : linksArr.headerManuChildDrops[1],
     "onlineBanking" : 'Онлайн банкинг',
@@ -41,6 +43,7 @@ export const RU = {
     search : "Поиск",
 }
 export const EN = {
+    bannerInfo : bannerInfo[2],
     linksHeaderTitles : linksArr.headerManuTitls[2],
     HeaderManuChildLinks : linksArr.headerManuChildDrops[2],
     "onlineBanking" : 'Online banking',

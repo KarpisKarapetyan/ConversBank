@@ -1,11 +1,9 @@
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import './OptionsInfo.css'
 
 function OptionsInfo (){
     const navigate = useNavigate()
-    const goToDetails = ()=>{
-        navigate ("../loanDetails")
-    }
+    const params =useParams()
 
     return (
         <>  
@@ -14,7 +12,7 @@ function OptionsInfo (){
                 <span style={{fontWeight : "bold"}} > 16.9 % </span>
             </div>
             <span style={{display:"inline-block" , margin: "10px 0"}}> Հաշվարկները կրում են մոտավոր բնույթ </span> 
-            <button className='calcButton' onClick={goToDetails} > Մանրամասն </button>
+            <button className='calcButton' onClick={()=> navigate(`../loanDetails/${params.id}`)} > Մանրամասն </button>
         </>
     )
 }

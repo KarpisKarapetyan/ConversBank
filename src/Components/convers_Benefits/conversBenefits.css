@@ -1,0 +1,26 @@
+.benefitsTabs_Main{
+    width: 100%;
+}
+.benefitsBanner_Main{
+    padding-top: 111px;
+   align-items: center;
+}
+.benefitsBanner_Main span{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+}
+
+.benefitsBanner_Title{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 54px; 
+    margin-bottom: 20px;
+}
+
+.MuiTabs-flexContainer{
+    display: flex;
+    justify-content: space-between;
+}

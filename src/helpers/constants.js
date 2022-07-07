@@ -524,25 +524,66 @@ export const linksArr = {
             ] 
 } 
     export const bannerInfo = [
-        {
-            title : `Անվճար քարտ նոր և \n գործող ավանդների \n համար`,
-            message : 'Եթե ունես գործող ավանդ կամ ուզում ես նորը ներդնել, ապա \n այս առաջարկը հենց քեզ համար է',
-            img : banner1,
-            link : '/'
-        },
-        {
-            title : 'Անվճար քարտ',
-            message : 'Եթե ունես գործող',
-            img : banner2,
-            link : '/'
-        },
-        {
-            title : 'Գործող ավանդ',
-            message : 'Ուզու՞մ ես նորը ներդնել',
-            img : banner3,
-            link : '/'
-        },
-
+        [
+            {
+                title : `Անվճար քարտ նոր և \n գործող ավանդների \n համար`,
+                message : 'Եթե ունես գործող ավանդ կամ ուզում ես նորը ներդնել, ապա \n այս առաջարկը հենց քեզ համար է',
+                img : banner1,
+                link : '/'
+            },
+            {
+                title : 'Անվճար քարտ',
+                message : 'Եթե ունես գործող',
+                img : banner2,
+                link : '/'
+            },
+            {
+                title : 'Գործող ավանդ',
+                message : 'Ուզու՞մ ես նորը ներդնել',
+                img : banner3,
+                link : '/'
+            },
+        ],
+        [
+            {
+                title : ` Безплатная карта для новых и \n существующих депозитов`,
+                message : 'Если у вас есть действующий депозит или вы хотите вложить новый, то \n это предложение именно для вас',
+                img : banner1,
+                link : '/'
+            },
+            {
+                title : 'Безплатная карта',
+                message : 'Если у вас есть',
+                img : banner2,
+                link : '/'
+            },
+            {
+                title : 'Действующий депозит',
+                message : 'Вы хотите вложить новый',
+                img : banner3,
+                link : '/'
+            },
+        ],
+        [
+            {
+                title : ` Free card for new \n and existing deposits`,
+                message : 'If you have an active deposit or want to invest a new one, then  \n this offer is for you',
+                img : banner1,
+                link : '/'
+            },
+            {
+                title : 'Free card',
+                message : 'If you have',
+                img : banner2,
+                link : '/'
+            },
+            {
+                title : 'Active deposit',
+                message : 'You want to invest a new one',
+                img : banner3,
+                link : '/'
+            },
+        ]
     ]
     export const footerLinks = [
         {
