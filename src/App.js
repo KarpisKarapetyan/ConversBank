@@ -1,4 +1,4 @@
-import React, {useEffect, useLayoutEffect} from 'react';
+import React, { useLayoutEffect } from 'react';
 import { useNavigate, useParams, useRoutes } from 'react-router-dom';
 import  HeaderMain  from './Components/Header/HeaderMain/HeaderMain';
 import Footer from './Components/Footer/Footer';
@@ -7,6 +7,7 @@ import { useSelector } from 'react-redux';
 import { mainTabsSelector } from './Redux/slices/mainTabs/mainTabs';
 import {languageSelector} from './Redux/slices/language/language'
 import HeaderTop from './Components/Header/HeaderTop/HeaderTop';
+import { languageSelector } from './Redux/slices/language/language';
 
 function App() {
   const routes = useRoutes(ROUTES)
@@ -17,8 +18,8 @@ function App() {
   const params = useParams()
 
   useLayoutEffect(()=>{
-      params.id = currentLang
-      navigate(`${routes.props.value.matches[0].pathname}/${params?.id}`) 
+    params.id = currentLang
+    navigate(`${routes.props.value.matches[0].pathname}/${params?.id}`)
   },[currentLang])
 
   const ChnageAllPage = () => { 

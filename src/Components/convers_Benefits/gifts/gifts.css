@@ -1,0 +1,22 @@
+.gift_Page{
+    padding-top: 80px;
+    
+}
+.giftFilter{
+    width: 90%;
+    height: 303px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #fff;
+    padding-top: 48px;
+
+}
+.giftFilter_SPAN {
+    padding-left: 40px;
+    font-family: 'Montserrat arm';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 39px;
+    color: #333333;
+}

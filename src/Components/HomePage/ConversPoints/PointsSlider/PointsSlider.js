@@ -12,22 +12,26 @@ export default function PointsSlider() {
     {
       img : gift,
       title : "Նվերներ",
-      message : "Ստացեք Ձեր նվերը"
+      message : "Ստացեք Ձեր նվերը",
+      link : '../conversBenefits'
     },
     {
       img : image2,
       title : "Նվերներ",
-      message : "Ստացեք Ձեր նվերը"
+      message : "Ստացեք Ձեր նվերը",
+      link : '../conversBenefits'
     },
     {
       img : image3,
       title : "Նվերներ",
-      message : "Ստացեք Ձեր նվերը"
+      message : "Ստացեք Ձեր նվերը",
+      link : '../conversBenefits'
     },
     {
       img: image4,
       title : "Նվերներ",
-      message : "Ստացեք Ձեր նվերը"
+      message : "Ստացեք Ձեր նվերը",
+      link : '../conversBenefits'
       
     },
   ]
@@ -51,7 +55,7 @@ export default function PointsSlider() {
                  <div key={i}>
                             <div className='giftBox' >       
                                  <img src={item.img} className="sliderimg" alt=""/>
-                                 <NavLink  to='/' 
+                                 <NavLink  to={item.link} 
                                            style={isActive => ({
                                               color: isActive ?  "#007DC3": "green",
                                               textDecoration : 'none'

@@ -31,17 +31,16 @@ export const CreateDropdown = ({linksArr}) => {
 
 export default function  HeaderMain () {
     const {t} = useTranslate()
-    const params = useParams()
     const navigate = useNavigate()
     const currentLang = useSelector(languageSelector).toLowerCase()
+    const params = useParams()
 
     useEffect(()=>{
         params.id = currentLang
-    },[currentLang])
-    
+    },[currentLang, params])
     return (
         <div className='HeaderMain'>
-              <img style={{cursor : 'pointer'}} onClick={()=> navigate(`../homePage/${params.id}`)} src={mainLogo} />
+              <img style={{cursor : "pointer"}} onClick= {()=> navigate(`../homePage/${params.id}`)} src={mainLogo} />
               <CreateDropdown linksArr = {t('linksHeaderTitles')}/>  
                 {/* {t('linksHeaderTitles').map((link, i ) =>(
                     <div key={i} className="dropdown"> 

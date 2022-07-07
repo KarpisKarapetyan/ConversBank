@@ -37,7 +37,29 @@
     color: white;
     cursor: pointer;
 }
-
+.globeDivLabel{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    width: 83px;
+    height: 32px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 5px;
+}
+.globeDivLabel input{
+    border: none;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+}
+.globeDivLabel img {
+    position: absolute;
+    z-index: 1;
+}
 .globeDiv{
     display: flex;
     justify-content: space-between;

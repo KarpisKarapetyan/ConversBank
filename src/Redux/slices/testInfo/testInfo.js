@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    testArr: []
+    testArr: [3000, 130000]
 }
 
 const testArrSlice = createSlice({

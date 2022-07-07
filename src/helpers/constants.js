@@ -526,60 +526,60 @@ export const linksArr = {
     export const bannerInfo = [
         [
             {
-            title : `Անվճար քարտ նոր և \n գործող ավանդների \n համար`,
-            message : 'Եթե ունես գործող ավանդ կամ ուզում ես նորը ներդնել, ապա \n այս առաջարկը հենց քեզ համար է',
-            img : banner1,
-            link : '/'
-        },
-        {
-            title : 'Անվճար քարտ',
-            message : 'Եթե ունես գործող',
-            img : banner2,
-            link : '/'
-        },
-        {
-            title : 'Գործող ավանդ',
-            message : 'Ուզու՞մ ես նորը ներդնել',
-            img : banner3,
-            link : '/'
-        },
-    ],
-        [
-            {
-                title : `фывтфводф \n ырвфлорл  \n фывтфлвтдф`,
-                message : 'влыфовдфылорвфывол офыов лдфо лдво флдов длфолд ',
+                title : `Անվճար քարտ նոր և \n գործող ավանդների \n համար`,
+                message : 'Եթե ունես գործող ավանդ կամ ուզում ես նորը ներդնել, ապա \n այս առաջարկը հենց քեզ համար է',
                 img : banner1,
                 link : '/'
             },
             {
-                title : 'фывдлф',
-                message : 'зфщышвол',
+                title : 'Անվճար քարտ',
+                message : 'Եթե ունես գործող',
                 img : banner2,
                 link : '/'
             },
             {
-                title : 'цйуукрвтчь',
-                message : 'фщывлфщо',
+                title : 'Գործող ավանդ',
+                message : 'Ուզու՞մ ես նորը ներդնել',
                 img : banner3,
                 link : '/'
             },
         ],
         [
             {
-                title : `skadhfla`,
-                message : 'poiajsdoaijakskkdklas  kh kahskd kjad jk \n sdhfkka sajdl a d',
+                title : ` Безплатная карта для новых и \n существующих депозитов`,
+                message : 'Если у вас есть действующий депозит или вы хотите вложить новый, то \n это предложение именно для вас',
                 img : banner1,
                 link : '/'
             },
             {
-                title : 'ajsdhkl ',
-                message : 'ajd asdn,',
+                title : 'Безплатная карта',
+                message : 'Если у вас есть',
                 img : banner2,
                 link : '/'
             },
             {
-                title : 'ajdbm ,d',
-                message : 'akjsdm. add,a n',
+                title : 'Действующий депозит',
+                message : 'Вы хотите вложить новый',
+                img : banner3,
+                link : '/'
+            },
+        ],
+        [
+            {
+                title : ` Free card for new \n and existing deposits`,
+                message : 'If you have an active deposit or want to invest a new one, then  \n this offer is for you',
+                img : banner1,
+                link : '/'
+            },
+            {
+                title : 'Free card',
+                message : 'If you have',
+                img : banner2,
+                link : '/'
+            },
+            {
+                title : 'Active deposit',
+                message : 'You want to invest a new one',
                 img : banner3,
                 link : '/'
             },

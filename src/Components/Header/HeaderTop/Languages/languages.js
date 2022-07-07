@@ -2,11 +2,12 @@
 import Box from '@mui/material/Box';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { LANGUAGES, useTranslate } from '../../../../contexts/LanguageProvider';
-import languageImage from '../../../HomePage/ConversPoints/PointsSlider/img/languages.png'
-// import { AM, EN, RU } from '../HeaderTop';
-
+import { mainTabsSelector } from '../../../../Redux/slices/mainTabs/mainTabs';
+import globe from '../../../HomePage/ConversPoints/PointsSlider/img/globe.png'
+import businessGlobe from '../../../HomePage/ConversPoints/PointsSlider/img/businessGlobe.png'
 
 export default function ChangeLanguages() {
   const [open, setOpen] = useState(false);
@@ -20,20 +21,22 @@ export default function ChangeLanguages() {
       localStorage.setItem('languagesOption' , event.target.value.toString())
       changeLanguage(event.target.value);
   }
+  const changeMainTabValue = useSelector(mainTabsSelector)
   
-  const toArm = ( ) =>  navigate ('./am')
   return (
     <ClickAwayListener onClickAway={handleClickAway}>
       <Box sx={{ position: 'relative' }}>
-          <img type="button" onClick={handleClick} src={languageImage}/>
+          <label onClick={handleClick} className='globeDivLabel' style={{backgroundColor : !changeMainTabValue ? '#fff' : '#2D3940'}}>
+            <img src={!changeMainTabValue ? globe : businessGlobe} style={{position : 'absolute'}} />
+            <input value={langOption} type="button"  />
+          </label>
           {open ? (
             <Box className='exchangeBox' value={langOption} onChange={handleChangeLang}>
-              {/* <div value="AM"> {t("armenian")} </div> */}
-              {/* <div value="RU"> {t("russian")} </div> */}
-              {/* <div value="EN"> {t("english")} </div> */}
-              {/* <div onClick={() => window.location.pathname="homePage/am" }>   {t("armenian")}  </div>  */}
-              {/* <RU wordRu = {t("russian")} />
-              <EN wordEn = {t("english")} /> */}
+              <div>
+                <label onClick={handleChangeLang}> <input  type="button"  value="AM" /> </label>
+                <label onClick={handleChangeLang}> <input  type="button"  value="RU" /> </label>
+                <label onClick={handleChangeLang}> <input  type="button"  value="EN" /> </label>
+              </div>
             </Box>
           ) : null}
       </Box>
