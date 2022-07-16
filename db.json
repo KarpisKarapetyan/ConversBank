@@ -1,4 +1,186 @@
-{
+{   
+    "giftsProducts" : [
+        
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flans_noteBook_Case.png?alt=media&token=6a3aa673-3da5-4235-8e0d-b53a126c0676",
+            "productName" : "Case Lenovo (T210 & B210)",
+            "productDescription" : "Case for NoteBook Lenovo T210 & B210 15.6",
+            "points" : [3700," Միավոր"],
+            "code" : "1167",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FSpeaker%20Genius%20%20500A.png?alt=media&token=7f4dbfbb-9187-49f6-990a-50aea3ff1f64",
+            "productName" : "Speaker Genius SP-HF 500A",
+            "productDescription" : "SP-HF 500A",
+            "points" : [8700 ," Միավոր"],
+            "code" : "1187",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FMonitor%20Dell%20SE2719H.png?alt=media&token=e65c947a-9c71-4d82-9074-da21faf118f1",
+            "productName" : "Monitor Dell SE2719H",
+            "productDescription" : "LED/1920x1080(60Hz)/(16:9)/250 ",
+            "points" : [43800 ," Միավոր"],
+            "code" : "1164",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FKeyboard%20%26%20Mouse%20Genius%20Wireless.png?alt=media&token=030ebe85-fe17-4b51-a810-ae1dbeb0ca56",
+            "productName" : "Keyboard & Mouse Genius Wireless",
+            "productDescription" : "Keyboard & Mouse Genius Wireless",
+            "points" : [4700," Միավոր"],
+            "code" : "1181",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FNotebook%20Dell%20Gaming%20G3%2015.png?alt=media&token=15e4be89-cfb8-4878-8283-f1f715593681",
+            "productName" : "Notebook Dell Gaming G3 15",
+            "productDescription" : "Intel® Core™ i5-10300H",
+            "points" :[211800, " Միավոր"],
+            "code" : "10002",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FLenovo%20IdeaPad%20L3%2015ITL6%20(82HL006TRE).png?alt=media&token=a20f2205-eebc-4e41-845c-3d3158f8d033",
+            "productName" : "Lenovo IdeaPad L3 15ITL6 (82HL006TRE)",
+            "productDescription" : "Intel® Celeron™ 6305 Processor ",
+            "points" : [82000," Միավոր"],
+            "code" : "10006",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Pandora",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2FPandora.png?alt=media&token=e5865d67-bc12-4d8c-b14f-0ad8e84ce31f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FPandora%20bracelet.png?alt=media&token=bef5fc27-b334-40ee-8d1e-65ce1ea364a6",
+            "productName" : "Bracelet",
+            "productDescription" : "wrong info from Figma",
+            "points" : [10700," Միավոր"],
+            "code" : "1738",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Նոյան Տուն",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2FNoyan_Tun_Logo.png?alt=media&token=49334f65-c63d-47ce-805e-655f5c3de1dd",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FNoyanTun_Wine.png?alt=media&token=bba76d46-d7de-4eb4-9ce0-471a742f2768",
+            "productName" : "Koor",
+            "productDescription" : "Koor կարմիր կամ սպիտակ չոր գինի",
+            "points" : [1700," Միավոր"],
+            "code" : "216",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },{
+            "brandName" : "Նոյան Տուն",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2FNoyan_Tun_Logo.png?alt=media&token=49334f65-c63d-47ce-805e-655f5c3de1dd",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FNoyan_Tun_Malai.png?alt=media&token=65af076d-245b-460b-8ff1-bf240cbde41e",
+            "productName" : "Malahi",
+            "productDescription" : "Malahi կարմիր կամ սպիտակ գինի",
+            "points" : [1600 ," Միավոր"],
+            "code" : "215",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flans_noteBook_Case.png?alt=media&token=6a3aa673-3da5-4235-8e0d-b53a126c0676",
+            "productName" : "Case Lenovo (T210 & B210)",
+            "productDescription" : "Case for NoteBook Lenovo T210 & B210 15.6",
+            "points" : [3700," Միավոր"],
+            "code" : "1167",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FSpeaker%20Genius%20%20500A.png?alt=media&token=7f4dbfbb-9187-49f6-990a-50aea3ff1f64",
+            "productName" : "Speaker Genius SP-HF 500A",
+            "productDescription" : "SP-HF 500A",
+            "points" : [8700 ," Միավոր"],
+            "code" : "1187",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FMonitor%20Dell%20SE2719H.png?alt=media&token=e65c947a-9c71-4d82-9074-da21faf118f1",
+            "productName" : "Monitor Dell SE2719H",
+            "productDescription" : "LED/1920x1080(60Hz)/(16:9)/250",
+            "points" : [43800 ," Միավոր"],
+            "code" : "1164",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FKeyboard%20%26%20Mouse%20Genius%20Wireless.png?alt=media&token=030ebe85-fe17-4b51-a810-ae1dbeb0ca56",
+            "productName" : "Keyboard & Mouse Genius Wireless",
+            "productDescription" : "Keyboard & Mouse Genius Wireless",
+            "points" : [4700," Միավոր"],
+            "code" : "1181",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FNotebook%20Dell%20Gaming%20G3%2015.png?alt=media&token=15e4be89-cfb8-4878-8283-f1f715593681",
+            "productName" : "Notebook Dell Gaming G3 15",
+            "productDescription" : "Intel® Core™ i5-10300H",
+            "points" :[211800, " Միավոր"],
+            "code" : "10002"
+        },
+        {
+            "brandName" : "Lans",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2Flans_Logo.png?alt=media&token=07559598-c91d-4108-a8ac-7229e2d35a5f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FLenovo%20IdeaPad%20L3%2015ITL6%20(82HL006TRE).png?alt=media&token=a20f2205-eebc-4e41-845c-3d3158f8d033",
+            "productName" : "Lenovo IdeaPad L3 15ITL6 (82HL006TRE)",
+            "productDescription" : "Intel® Celeron™ 6305 Processor ",
+            "points" : [82000," Միավոր"],
+            "code" : "10006",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Pandora",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2FPandora.png?alt=media&token=e5865d67-bc12-4d8c-b14f-0ad8e84ce31f",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FPandora%20bracelet.png?alt=media&token=bef5fc27-b334-40ee-8d1e-65ce1ea364a6",
+            "productName" : "Bracelet",
+            "productDescription" : "wrong info from Figma",
+            "points" : [10700," Միավոր"],
+            "code" : "1738",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Նոյան Տուն",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2FNoyan_Tun_Logo.png?alt=media&token=49334f65-c63d-47ce-805e-655f5c3de1dd",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FNoyanTun_Wine.png?alt=media&token=bba76d46-d7de-4eb4-9ce0-471a742f2768",
+            "productName" : "Koor",
+            "productDescription" : "Koor կարմիր կամ սպիտակ չոր գինի",
+            "points" : [1700," Միավոր"],
+            "code" : "216",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        },
+        {
+            "brandName" : "Նոյան Տուն",
+            "brandLogo" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2Flogos%2FNoyan_Tun_Logo.png?alt=media&token=49334f65-c63d-47ce-805e-655f5c3de1dd",
+            "productImg" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FNoyan_Tun_Malai.png?alt=media&token=65af076d-245b-460b-8ff1-bf240cbde41e",
+            "productName" : "Malahi",
+            "productDescription" : "Malahi կարմիր կամ սպիտակ գինի",
+            "points" : [1600 ," Միավոր"],
+            "code" : "215",
+            "codePaper" : "https://firebasestorage.googleapis.com/v0/b/convers-bank-test.appspot.com/o/productsImg%2FcodePaper.png?alt=media&token=38c0b5c4-2573-4b9d-8e00-39f591fbc570"
+        }
+    ],
+
     "info": [
         {
             

@@ -1,10 +1,12 @@
 .benefitsTabs_Main{
     width: 100%;
 }
+
 .benefitsBanner_Main{
     padding-top: 111px;
-   align-items: center;
+    align-items: center;
 }
+
 .benefitsBanner_Main span{
     color: rgb(255, 255, 255);
     text-align: center;
@@ -20,7 +22,13 @@
     margin-bottom: 20px;
 }
 
-.MuiTabs-flexContainer{
+.benefitsTabs_Main .MuiTabs-flexContainer{
     display: flex;
     justify-content: space-between;
+}
+.giftsPagination{
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px ;
 }

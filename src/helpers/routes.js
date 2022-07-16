@@ -21,33 +21,11 @@ const MAIN_ROUTES = [
         path: "conversBenefits",
         element: <ConversBenefits/>,
         children : [
-            [
-                {
-                    path : "gifts",
-                    element : <Gifts/>,
-                    children : [
-                            {
-                                path : ":id",
-                                element : <Gifts/>,
-                            },
-                        ],
-                },
-            ],
-                    
-                    {
-                        path : ":id",
-                        element : <Gifts/>,
-                    },
-                    {
-                        path : ":id",
-                        element : <Gifts/>,
-                    },
                     {
                         path : ":id",
                         element : <Gifts/>,
                     }
                 ]
-        
     },
     
     {

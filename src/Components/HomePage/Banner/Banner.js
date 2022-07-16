@@ -1,9 +1,9 @@
-import { useTranslate } from '../../../contexts/LanguageProvider';
-import { linerDots } from '../../../helpers/constants';
-import SlickSlider from '../../slickSlider/slickSlider'
 import './Banner.css'
 import { BannerContent } from './bannerContent/BannerContent';
 import { useTranslate } from '../../../contexts/LanguageProvider'
+import { linerDots } from '../../../helpers/constants';
+import SlickSlider from '../../slickSlider/slickSlider'
+
 export default function Banner(){
     const {t} = useTranslate()
     const SLIDER_SETTINGS = {

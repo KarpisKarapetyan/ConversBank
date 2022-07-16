@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux';
 import { mainTabsSelector } from './Redux/slices/mainTabs/mainTabs';
 import {languageSelector} from './Redux/slices/language/language'
 import HeaderTop from './Components/Header/HeaderTop/HeaderTop';
-import { languageSelector } from './Redux/slices/language/language';
 
 function App() {
   const routes = useRoutes(ROUTES)

@@ -1,13 +1,8 @@
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-
 import { useState } from 'react';
 import { Gifts } from './gifts/gifts';
-
-function createData(name, take, sale) {
-  return { name, take, sale};
-}
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
